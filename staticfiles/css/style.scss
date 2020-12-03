@@ -1,0 +1,78 @@
+@import 'general';
+@import 'typography';
+@import 'header';
+@import 'form';
+@import 'home-content';
+@import 'footer';
+@import 'modal';
+@import 'carousel';
+@import 'single-blog';
+@import 'single-car-product';
+@import 'all-car';
+@import 'compare-car';
+@import 'dealer-list';
+@import 'dealer-details';
+@import 'contact-us';
+@import 'loan-elegibility';
+@import 'car-post';
+@import 'seller-profile';
+@import 'sell-product-list';
+@import 'bidding-result';
+@import 'chat-box';
+@import 'bike-ecommerce';
+@import 'bike-cart';
+@import 'bike-checkout';
+@import 'bike-fit';
+
+/*******************************************
+             Loading
+*******************************************/
+
+#loading {
+    background-color: #ffffff;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    margin-top: 0px;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    overflow: hidden !important;
+    right: 0px;
+    z-index: 999999;
+}
+
+#loading-center {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    img {
+        text-align: center;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        z-index: 99;
+        margin: 0 auto;
+    }
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border: none;
+    outline: none !important;
+    box-shadow: 0 0 0 1px rgba(219, 45, 46, 0.52);
+}
+
+.button:focus,
+.btn.btn-block:focus {
+    color: #ffffff;
+    outline: none !important;
+}

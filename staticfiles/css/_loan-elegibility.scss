@@ -1,0 +1,163 @@
+.loan-eligibility-block h2 {
+    font-size: 22px;
+}
+
+form.form-horizontal.loan-eligibility-form {
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px 0 0;
+    .button.red {
+        margin-top: 12px;
+    }
+    .btn.btn-primary {
+        margin: 13px 0 0 10px;
+        padding: 9px 25px;
+    }
+}
+
+.resident-since {
+    margin-bottom: 0;
+    text-align: left;
+}
+
+// Insurance
+.insurance-car #tabs {
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 150px;
+    li {
+        font-size: 18px;
+        font-weight: 700;
+    }
+    form {
+        // display: flex;
+        // flex-direction: column;
+        #next-1,
+        #Renewnext-1 {
+            width: 41%;
+            float: left;
+        }
+    }
+    form#form-data,
+    #Renew-form-data {
+        padding: 0 50px;
+    }
+    .progress {
+        margin-bottom: 30px;
+    }
+}
+
+#progressBar,
+#RenewprogressBar {
+    margin: 0 50px;
+    background: #f7f7f7;
+    #progressText,
+    #RenewprogressText {
+        font-size: 14px;
+        color: #222;
+    }
+}
+
+#pre,
+#Renewpre,
+#Quotes,
+#RenewQuotes {
+    width: 100%;
+}
+
+#second,
+#Renewsecond {
+    display: none;
+}
+
+// Insurance Check
+.smallScreenPadding {
+    color: #000;
+    i {
+        padding-right: 5px;
+        color: #000;
+        font-size: 16px;
+    }
+}
+
+.Car-eligibility-check {
+    background: #f7f7f7;
+}
+
+.insurance-area {
+    background: #fff;
+    padding: 50px 0 0;
+    .button {
+        padding: 4px 12px;
+    }
+    .card-box-title {
+        color: #222;
+        font-weight: 600;
+    }
+}
+
+button.required {
+    background: #db2d2e;
+    color: #fff;
+    font-size: 11px;
+    box-sizing: border-box;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.quick-details {
+    background: transparent;
+    border: none;
+    margin-top: 15px;
+    cursor: pointer;
+    i {
+        padding-left: 5px;
+    }
+}
+
+.card-features {
+    padding: 50px 30px;
+}
+
+#exampleModalScrollable .modal-title {
+    position: relative;
+    left: 0;
+    font-size: 20px;
+}
+
+#exampleModalScrollable .close {
+    top: -8px;
+    left: -18px;
+}
+
+.required-title {
+    background: #E2E3E5;
+    padding: 10px;
+    color: #000;
+    font-weight: 600;
+    i {
+        color: #db2d2e;
+        padding-right: 5px;
+    }
+}
+
+.required-list {
+    border: 1px solid #f7f7f7;
+    padding: 0 10px;
+    li {
+        list-style: none;
+        font-size: 13px;
+        i {
+            color: #db2d2e;
+            padding-right: 5px;
+        }
+    }
+}
+
+#exampleModalScrollable .modal-content {
+    height: 90vh;
+    overflow-y: auto;
+}

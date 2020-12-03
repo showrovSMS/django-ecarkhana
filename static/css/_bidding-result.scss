@@ -1,0 +1,71 @@
+.bidding-area {
+    background: #f7f7f7f7;
+    box-shadow: 0px 2px 4px #cec1c1f9;
+    padding: 50px 0;
+    .bid-info-wrap {
+        padding: 10px 15px;
+        ul {
+            display: flex;
+            li {
+                display: flex;
+                padding: 0 20px;
+                color: #222;
+                span {
+                    padding: 0 5px 0 0;
+                }
+                div {
+                    font-weight: 600;
+                    font-size: 18px;
+                }
+            }
+        }
+        .bid-pera {
+            padding: 10px 15px;
+            color: #333;
+        }
+    }
+    .sms-bidding-table {
+        padding: 10px 30px;
+        .bidding-table-content {
+            width: 100%;
+            margin: 0 auto;
+            thead {
+                border-bottom: 1px solid #e8dbdb;
+                .bidding-table-title {
+                    padding: 10px 0;
+                    text-align: center;
+                    color: #222;
+                    font-size: 16px;
+                    border-right: 1px solid #e8dbdb;
+                    &:last-child {
+                        border-right: none;
+                    }
+                    i {
+                        color: #DB2D2E;
+                        padding-left: 3px;
+                        font-size: 14px;
+                    }
+                }
+            }
+            tbody {
+                margin: 0 auto;
+                text-align: center;
+                td {
+                    padding: 10px 0;
+                    color: #423e3e;
+                    border-bottom: 1px solid #e8dbdb;
+                    .bid-updated {
+                        font-weight: bold;
+                        color: #d00;
+                        i {
+                            color: #7b7bea;
+                        }
+                    }
+                }
+                .last-tr td {
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+}

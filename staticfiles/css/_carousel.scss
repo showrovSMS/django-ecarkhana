@@ -1,0 +1,136 @@
+.owl-item {
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+    img {
+        width: auto;
+    }
+}
+
+.owl-carousel .owl-nav {
+    display: block;
+    position: absolute;
+    text-indent: inherit;
+    top: 45%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    left: 0;
+    width: 100%;
+    cursor: pointer;
+    z-index: 999;
+    opacity: 0;
+    .owl-prev {
+        display: block;
+        position: absolute;
+        text-indent: inherit;
+        left: 0px;
+        width: auto;
+        cursor: pointer;
+        -webkit-transition: opacity 0.3s ease 0s, left 0.3s ease 0s;
+        -moz-transition: opacity 0.3s ease 0s, left 0.3s ease 0s;
+        -ms-transition: opacity 0.3s ease 0s, left 0.3s ease 0s;
+        -o-transition: opacity 0.3s ease 0s, left 0.3s ease 0s;
+        transition: opacity 0.3s ease 0s, left 0.3s ease 0s;
+        i {
+            padding-left: 0px;
+        }
+    }
+    .owl-next {
+        display: block;
+        position: absolute;
+        text-indent: inherit;
+        right: 0px;
+        width: auto;
+        cursor: pointer;
+        -webkit-transition: opacity 0.3s ease 0s, right 0.3s ease 0s;
+        -moz-transition: opacity 0.3s ease 0s, right 0.3s ease 0s;
+        -ms-transition: opacity 0.3s ease 0s, right 0.3s ease 0s;
+        -o-transition: opacity 0.3s ease 0s, right 0.3s ease 0s;
+        transition: opacity 0.3s ease 0s, right 0.3s ease 0s;
+    }
+    i {
+        font-size: 20px;
+        border-radius: 50%;
+        width: 44px;
+        height: 44px;
+        line-height: 42px;
+        padding-left: 2px;
+        display: inline-block;
+        color: #db2d2e;
+        background: #ffffff;
+        border: 1px solid #e3e3e3;
+        font-weight: normal;
+        text-align: center;
+        -webkit-transition: all 0.3s ease-out 0s;
+        -moz-transition: all 0.3s ease-out 0s;
+        -ms-transition: all 0.3s ease-out 0s;
+        -o-transition: all 0.3s ease-out 0s;
+        transition: all 0.3s ease-out 0s;
+        &:hover {
+            background: #db2d2e;
+            color: #fff;
+            border-color: #db2d2e;
+        }
+    }
+}
+
+.owl-carousel:hover .owl-nav {
+    opacity: 1;
+    .owl-prev {
+        left: -2%;
+    }
+    .owl-next {
+        right: -2%;
+    }
+}
+
+.owl-carousel .owl-controls .owl-dot {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.owl-carousel .owl-dots {
+    display: inline-block;
+    position: relative;
+    text-indent: inherit;
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+}
+
+.owl-carousel.owl-theme .owl-dots .owl-dot {
+    margin-top: 20px;
+    display: inline-block;
+    span {
+        background: #a5a5a5;
+        border-radius: 30px;
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        margin: 0px 3px;
+        transition: all 0.5s ease-in-out;
+        -webkit-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
+        cursor: pointer;
+    }
+    &:hover span {
+        background: #db2d2e;
+    }
+}
+
+.owl-carousel.owl-theme .owl-dots .owl-dot.active span {
+    background: #db2d2e;
+    width: 24px;
+}

@@ -1,0 +1,33 @@
+.search-widget {
+    background: #f4f4f4 none repeat scroll 0 0;
+    height: 50px;
+    margin: 20px 0;
+    position: relative;
+    input[type="text"] {
+        background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+        border: medium none;
+        height: 100%;
+        max-width: none;
+        padding-left: 15px;
+        padding-right: 40px;
+        width: 100%;
+    }
+    button {
+        background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+        border: medium none;
+        color: #bdbdbd;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 40px;
+    }
+}
+
+.row.sell-single {
+    margin-top: 50px;
+}
+
+.sell-productlul {
+    margin-top: 0px !important;
+}

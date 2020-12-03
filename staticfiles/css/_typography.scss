@@ -1,0 +1,188 @@
+/***************************
+   Typography
+****************************/
+
+mark {
+    background: #db2d2e;
+    color: #ffffff;
+}
+
+ol {
+    padding: 0px;
+    margin: 0px;
+}
+
+ol li {
+    list-style: decimal inside;
+    padding: 0px;
+    margin: 0px;
+    line-height: 30px;
+}
+
+ol.alpha li {
+    list-style: decimal-leading-zero inside;
+    padding: 0px;
+    margin: 0px;
+}
+
+ol.roman {
+    padding-left: 15px;
+}
+
+ol.roman li {
+    list-style: lower-roman;
+    padding: 0px;
+    margin: 0px;
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+ul li {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    line-height: 30px;
+}
+
+ul.disc li {
+    list-style: disc inside;
+    padding: 0px;
+    margin: 0px;
+    line-height: 30px;
+}
+
+ul.list-style-1 li {
+    list-style: none;
+}
+
+.list-style-none li {
+    list-style: none;
+}
+
+.list-inline>li {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+blockquote {
+    display: block;
+    background: #fff;
+    position: relative;
+    font-size: 14px;
+    padding-left: 60px;
+    border-left: 5px solid #f5f5f5;
+    font-style: italic;
+    padding-right: 0px;
+}
+
+blockquote::before {
+    content: "\201C";
+    font-family: Georgia, serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: #e3e3e3;
+    position: absolute;
+    left: 10px;
+    top: 25px;
+}
+
+blockquote::after {
+    content: "";
+}
+
+blockquote cite {
+    font-size: 14px;
+    margin-top: 15px;
+    display: block;
+    font-weight: 600;
+    color: #db2d2e;
+}
+
+.quick-links .row.no-gutter {
+    padding: 0 15px;
+}
+
+.no-gutter>[class*='col-'] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+
+/***************************
+Page section margin padding 
+****************************/
+
+.page-section-ptb {
+    padding: 80px 0;
+}
+
+.page-section-pt {
+    padding: 80px 0 0;
+}
+
+.page-section-pb {
+    padding: 0 0 80px;
+}
+
+
+/*************************
+  Text Color
+***********************/
+
+.text-red {
+    color: #db2d2e;
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+.text-black {
+    color: #323232;
+}
+
+.text-gray {
+    color: #626262;
+}
+
+.typography-main h4.title {
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    display: block;
+    &::before {
+        position: absolute;
+        content: "";
+        width: 20px;
+        height: 2px;
+        background: #db2d2e;
+        left: 0px;
+        bottom: 0px;
+    }
+    .typography p {
+        margin-bottom: 30px;
+        display: block;
+    }
+    .typography-main hr {
+        margin: 40px 0px;
+    }
+    .typography-teg {
+        margin-bottom: 30px;
+    }
+}
+
+.typography-main h4.title .typography-main .typography-main h5.title {
+    margin-bottom: 10px;
+    display: block;
+}

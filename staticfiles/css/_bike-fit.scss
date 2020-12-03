@@ -1,0 +1,232 @@
+.rate-us {
+    text-align: center;
+    input[type=radio] {
+        display: none;
+    }
+    .female+.female-label,
+    .male+.male-label,
+    .Mountain+.Mountain-label,
+    .Road+.Road-label,
+    .City+.City-label,
+    .Cross+.Cross-label,
+    .Kids+.Kids-label,
+    .E-bike+.E-bike-label,
+    .inch+.inch-label,
+    .cm+.cm-label {
+        height: 200px;
+        width: 200px;
+        display: inline-block;
+        padding: 0 0 0 0px;
+    }
+    .female+.female-label {
+        background: url("../images/bicycle/001-man.png") no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+    .male+.male-label {
+        background: url("../images/bicycle/002-woman.png") no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+    .Mountain+.Mountain-label {
+        background: url("../images/bicycle/001-mountains.png") no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+    .Road+.Road-label {
+        background: url("../images/bicycle/002-destination.png") no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+    .City+.City-label {
+        background: url("../images/bicycle/003-bicycle.png") no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+    .Cross+.Cross-label {
+        background: url("../images/bicycle/004-shapes-and-symbols.png") no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+    .Kids+.Kids-label {
+        background: url("../images/bicycle/005-bicycle-1.png") no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+    .E-bike+.E-bike-label {
+        background: url("../images/bicycle/006-bicycle-2.png") no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+    .inch+.inch-label {
+        background: url("../images/bicycle/centimeter.png") no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+    .cm+.cm-label {
+        background: url("../images/bicycle/centimeter (1).png") no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+    label {
+        position: relative !important;
+        margin: 15px 30px;
+    }
+    label .sms-name {
+        position: absolute;
+        bottom: -40px;
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 700;
+        color: #db2d2e;
+    }
+}
+
+div#third,
+#four,
+#five {
+    display: none;
+}
+
+.insurance-car.fit-bike .progress {
+    margin-bottom: 50px;
+}
+
+.insurance-car.fit-bike form>div {
+    width: 100%;
+    .sms-erpor {
+        margin: 40px 0 0;
+        width: 100%;
+        text-align: center;
+        .button {
+            min-width: 50%;
+        }
+    }
+}
+
+#second .form-group,
+#third .form-group {
+    margin-bottom: 1rem;
+}
+
+#pre-1,
+#next-2,
+#next-3 {
+    width: 100%;
+}
+
+div#four {
+    position: relative;
+    padding: 0 70px;
+    .mesuarement-size {
+        h3 {
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 30px;
+            margin-bottom: 30px;
+        }
+        border-radius: 4px;
+        box-shadow: 1px 1px 10px rgba(0,
+        0,
+        0,
+        .3);
+        padding: 20px;
+        .mesuarement-field {
+            box-sizing: border-box;
+            margin: 15px 0px;
+            label {
+                font-weight: 600;
+                color: #222;
+            }
+            input {
+                width: 50%;
+                float: right;
+                border-radius: 5px;
+                border: 1px solid #948d8d;
+                padding-left: 10px;
+            }
+        }
+        .sms-btttn-cos {
+            width: 100%;
+            display: flex;
+            #next-4,
+            #pre-2 {
+                width: 50%;
+            }
+        }
+    }
+}
+
+#video-eight,
+#video-seven,
+#video-six,
+#video-five,
+#video-four,
+#video-three,
+#video-two {
+    display: none;
+}
+
+.measurement-video {
+    display: flex;
+    .sms-video {
+        margin-right: 20px;
+        .video-des h3 {
+            margin-top: 20px;
+        }
+    }
+}
+
+#five {
+    position: relative;
+    .measurement-result {
+        border-radius: 4px;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        padding: 30px 40px;
+        h3 {
+            margin-bottom: 20px;
+        }
+        .mesarement-res-com-name {
+            width: 50%;
+            float: left;
+        }
+        .mesarement-res-com-value {
+            text-align: right;
+            width: 50%;
+            float: right;
+        }
+        .button {
+            margin-bottom: 30px;
+        }
+    }
+    .mesaurment-output-img {
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .mesaurement-pre-input {
+        position: relative;
+        margin-top: 50px;
+        padding: 20px;
+        h3 {
+            margin-bottom: 20px;
+        }
+        .pre-measuremne-name {
+            float: left;
+            color: #222;
+            font-weight: bold;
+        }
+        .pre-mesaurments-valu {
+            text-align: right;
+            color: #232323;
+            font-weight: 600;
+        }
+    }
+    .save-result {
+        position: relative;
+        margin-top: 50px;
+        padding: 20px;
+    }
+}

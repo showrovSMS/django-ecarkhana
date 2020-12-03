@@ -1,0 +1,286 @@
+.modal-dialog {
+    width: 100%;
+}
+
+.modal-content {
+    padding: 0 32px 0px;
+}
+
+.modal-header {
+    padding: 15px 0;
+    margin-bottom: 25px;
+}
+
+.modal-title {
+    position: relative;
+    left: -89%;
+    font-size: 20px;
+}
+
+.modal-body {
+    padding: 10px 0;
+}
+
+.modal .modal-header .close {
+    background: transparent;
+    border-radius: 50%;
+    color: #000;
+    font-size: 28px;
+    line-height: 0px;
+    margin-top: 5px;
+    opacity: 1;
+    text-align: center;
+    text-shadow: none;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: -8px;
+    left: 36px;
+}
+
+.modal-footer {
+    justify-content: center;
+}
+
+
+/*-------------------------------------------------
+	Login / Register / Forgot password
+-------------------------------------------------------*/
+
+.login_wrap {
+    width: 100%;
+    display: flex;
+    margin-right: 0;
+    margin-left: 0;
+    .form-control {
+        width: 100%;
+        background: #eeeeee none repeat scroll 0 0;
+        border: 0 none;
+        border-radius: 3px;
+        box-shadow: none;
+        color: #888888;
+        font-size: 15px;
+        height: 46px;
+        line-height: 30px;
+        padding: 0 15px;
+    }
+    .form-group {
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+}
+
+.login_wrap .col-md-6.col-sm-6:nth-child(1),
+.signup_wrap .col-md-6.col-sm-6:nth-child(1) {
+    border-right: 1px solid #e4dbdb;
+}
+
+.checkbox,
+.radio {
+    padding-top: 5px;
+    width: 100%;
+}
+
+.login_wrap .btn.btn-block,
+.signup_wrap .btn.btn-block,
+.forgotpassword_wrap .btn.btn-block {
+    background: #DB2D2E none repeat scroll 0 0;
+    fill: #DB2D2E;
+    border: medium none;
+    border-radius: 3px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 30px;
+    margin: auto;
+    padding: 7px 36px;
+    transition: all 0.3s linear 0s;
+    -moz-transition: all 0.3s linear 0s;
+    -o-transition: all 0.3s linear 0s;
+    -webkit-transition: all 0.3s linear 0s;
+    -ms-transition: all 0.3s linear 0s;
+    width: 100%;
+    &:hover {
+        background: #fa2837 none repeat scroll 0 0;
+    }
+}
+
+h6.gray_text {
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.btn.facebook-btn,
+.btn.facebook-btn:hover {
+    background: #3c5a98 !important;
+    margin: 20px 0 !important;
+    text-align: left !important;
+    i {
+        position: relative;
+        left: -15px;
+        font-size: 22px;
+        top: 3px;
+    }
+}
+
+.btn.twitter-btn,
+.btn.twitter-btn:hover {
+    background: #28bcec !important;
+    margin: 20px 0 !important;
+    text-align: left !important;
+    i {
+        position: relative;
+        left: -15px;
+        font-size: 22px;
+        top: 3px;
+    }
+}
+
+.btn.googleplus-btn,
+.btn.googleplus-btn:hover {
+    background: #fe0000 !important;
+    margin: 20px 0 !important;
+    text-align: left !important;
+    i {
+        position: relative;
+        left: -15px;
+        font-size: 22px;
+        top: 3px;
+    }
+}
+
+.signup_wrap {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    .form-control {
+        width: 100%;
+        background: #eeeeee none repeat scroll 0 0;
+        border: 0 none;
+        border-radius: 3px;
+        box-shadow: none;
+        color: #888888;
+        font-size: 15px;
+        height: 46px;
+        line-height: 30px;
+        padding: 0 15px;
+    }
+    .form-group {
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+}
+
+#forgotpassword .modal-title {
+    left: -71%;
+}
+
+#forgotpassword .close {
+    left: 25%;
+}
+
+.forgotpassword_wrap .form-control {
+    width: 100%;
+    background: #eeeeee none repeat scroll 0 0;
+    border: 0 none;
+    border-radius: 3px;
+    box-shadow: none;
+    color: #888888;
+    font-size: 15px;
+    height: 46px;
+    line-height: 30px;
+    padding: 0 15px;
+}
+
+.forgotpassword_wrap .form-group {
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+
+#submitquote .modal-header {
+    border: none;
+    .close {
+        left: 0;
+    }
+}
+.thank-you-pop{
+	width:100%;
+    padding: 20px 0 90px 0;
+    text-align:center;
+    img{
+        width:76px;
+        height:auto;
+        margin:0 auto;
+        display:block;
+        margin-bottom:25px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 576px) and (max-width: 991px) {
+  
+    
+    #forgotpassword .close {
+        left: 45% !important;
+    }
+    #forgotpassword .modal-title {
+        left: -50% !important;
+    }
+    
+    #signupform .modal-title {
+        left: -82%;
+    }
+    
+  }
+
+  @media (max-width:575px){
+    .modal-dialog {
+        margin: 0px 0px;
+    }
+    #forgotpassword .modal-title {
+        left: -30% !important;
+    }
+    #forgotpassword .close {
+        left: 63% !important;
+    }
+    #signupform .modal-title {
+        left: -68%;
+    }
+    #loginform .modal-title {
+        left: -75%;
+    }
+}
+  @media (max-width:991px) {
+    .row.login_wrap .col-md-6.col-sm-12,
+    .signup_wrap .col-md-6.col-sm-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+  }
+
+  @media (max-width:767px) {
+
+  }

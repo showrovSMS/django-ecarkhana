@@ -1,0 +1,217 @@
+.inner-intro {
+    background-color: rgba(0, 0, 0, 0);
+    // background-origin: initial;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    position: relative;
+    z-index: 0;
+    // background-attachment: fixed;
+    height: 410px;
+    display: block;
+    // &::before {
+    //     background: rgba(0, 0, 0, 0.7);
+    //     content: "";
+    //     height: 100%;
+    //     left: 0;
+    //     position: absolute;
+    //     top: 0;
+    //     width: 100%;
+    //     z-index: -1;
+    // }
+}
+
+.row.text-center.intro-title {
+    position: relative;
+    top: 250px;
+}
+
+ul.page-breadcrumb {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    li {
+        list-style: none;
+        padding: 0 5px;
+        a {
+            color: #fff;
+        }
+    }
+}
+
+ul.page-breadcrumb li span {
+    color: #fff;
+}
+
+.blog-entry-image.clearfix {
+    margin-bottom: 20px;
+}
+
+.entry-title a {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    color: #363636;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    display: block;
+    font-weight: 700;
+}
+
+.entry-meta {
+    margin-bottom: 15px;
+    ul li {
+        display: inline-block;
+        padding-right: 10px;
+        a {
+            font-size: 14px;
+            margin-right: 10px;
+            color: #626262;
+            i {
+                color: #db2d2e;
+            }
+        }
+    }
+}
+
+.entry-share.clearfix {
+    margin-bottom: 50px;
+}
+
+ul.list-style-none {
+    display: flex;
+    li {
+        padding: 0 5px;
+    }
+}
+
+.form-control {
+    font-size: 14px;
+    border-radius: 5px;
+    box-shadow: none;
+    height: auto;
+    line-height: 1.33333;
+    padding: 12px 18px;
+    background: transparent;
+    color: #626262;
+}
+
+.gray-form input,
+.gray-form textarea {
+    width: 100%;
+    resize: vertical;
+    background: #f6f6f6;
+    border: 1px solid transparent;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border: none;
+    outline: none !important;
+    box-shadow: 0 0 0 1px rgba(219, 45, 46, 0.52);
+}
+
+.gray-form.row .red {
+    display: block;
+    text-align: center;
+    border: 0px;
+    width: 100%;
+}
+
+.blog-sidebar .sidebar-widget {
+    margin-bottom: 40px;
+}
+
+.blog-sidebar .sidebar-widget h6 {
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    &:before {
+        position: absolute;
+        content: "";
+        width: 20px;
+        height: 2px;
+        background: #db2d2e;
+        left: 0;
+        bottom: 0px;
+    }
+}
+
+.blog-sidebar .widget-search {
+    position: relative;
+    i {
+        position: absolute;
+        right: 0px;
+        padding: 16px 12px;
+        font-size: 14px;
+        color: #626262;
+        cursor: pointer;
+    }
+    input {
+        padding-right: 30px;
+        color: #323232;
+        height: 45px;
+        border-color: #f6f6f6;
+        background: #f6f6f6;
+        transition: all 0.5s ease-in-out;
+        -webkit-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
+    }
+}
+
+.blog-sidebar .widget-link ul li {
+    display: block;
+    clear: both;
+    a {
+        display: block;
+        border-bottom: 1px solid #e3e3e3;
+        padding: 10px 0px;
+        color: #999999;
+        i {
+            padding-right: 10px;
+        }
+        &:hover {
+            color: #db2d2e;
+            border-color: #db2d2e;
+        }
+    }
+}
+
+.blog-sidebar .sidebar-widget .recent-post {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-color: #e3e3e3;
+}
+
+.blog-sidebar .sidebar-widget .recent-post:last-child {
+    border-bottom: 0px;
+}
+
+.blog-sidebar .sidebar-widget .tags li {
+    display: inline-block;
+    margin: 2px;
+    a {
+        display: block;
+        color: #999999;
+        border: 1px solid #e3e3e3;
+        background: transparent;
+        padding: 5px 10px;
+        margin-bottom: 5px;
+        font-size: 14px;
+        text-transform: capitalize;
+        &:hover {
+            background: #db2d2e;
+            color: #ffffff;
+            border-color: #db2d2e;
+        }
+    }
+}

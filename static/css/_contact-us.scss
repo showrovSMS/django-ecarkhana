@@ -1,0 +1,236 @@
+.contact .contact-box {
+    padding: 30px 10px;
+    background: #f6f6f6;
+    i {
+        color: #db2d2e;
+        font-size: 30px;
+        display: block;
+        margin-bottom: 20px;
+    }
+    &:hover {
+        background: #db2d2e;
+    }
+    &:hover i,
+    &:hover p,
+    &:hover h5 {
+        color: #ffffff;
+    }
+}
+
+.contact .contact-box,
+.contact .contact-box p,
+.contact .contact-box i,
+.contact .contact-box h5 {
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+}
+
+#formmessage {
+    display: none;
+}
+
+.contact-form.row button#submit {
+    width: 100%;
+}
+
+.opening-hours {
+    padding: 25px;
+    h6 {
+        position: relative;
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+        &:before {
+            position: absolute;
+            content: "";
+            width: 20px;
+            height: 2px;
+            background: #db2d2e;
+            left: 0;
+            bottom: 0px;
+        }
+    }
+    .list-style-none {
+        display: flex;
+        flex-direction: column;
+    }
+    strong {
+        width: 100px;
+        display: inline-block;
+        color: #363636;
+    }
+}
+
+.feature-box-3 .icon {
+    width: 70px;
+    height: 70px;
+    float: left;
+    margin-right: 20px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #f6f6f6;
+    transition: all 0.5s ease-in-out;
+    i {
+        font-size: 20px;
+        background: #f6f6f6;
+        display: block;
+        border-radius: 50%;
+        margin: 9px 10px 10px 9px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        transition: all 0.5s ease-in-out;
+    }
+}
+
+.feature-box-3 .content {
+    display: table-cell;
+    margin-top: 10px;
+    vertical-align: top;
+    h5 {
+        margin-bottom: 0px;
+        margin-top: 10px;
+    }
+    h6 {
+        margin-bottom: 0px;
+        margin-top: 10px;
+    }
+    p {
+        margin-top: 0px !important;
+    }
+}
+
+.feature-box-3:hover .icon,
+.feature-box-3:hover .icon i {
+    border-color: #db2d2e;
+}
+
+.feature-box-3:hover .icon i {
+    background: #db2d2e;
+    color: #ffffff;
+}
+
+// Car Loan
+.Car.Loan .img-box {
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 0 30px;
+    max-width: 100%;
+    width: auto;
+    height: 240px;
+}
+
+.loan-des p {
+    margin-bottom: 35px;
+}
+
+.divider {
+    border-top: #e7e7e7 solid 1px;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem!important;
+}
+
+.mt-3 {
+    margin-top: 2rem!important;
+}
+
+#myTab li {
+    list-style: none;
+    background: #000000;
+    margin: 0 1px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    a {
+        color: #ffffff;
+    }
+}
+
+#myTab {
+    border-bottom: none;
+    margin-top: 30px;
+}
+
+#myTab .nav-link.active {
+    color: #000000;
+    background-color: #fff;
+    border-color: #dee2e6 #dee2e6 #fff;
+}
+
+.Car.Loan .tab-content {
+    background: #fff;
+    line-height: 25px;
+    border: 1px solid #ddd;
+    padding: 30px 25px !important;
+    border-radius: 5px;
+}
+
+.loan-des,
+.img-box {
+    margin-top: 30px;
+}
+
+.loan-business {
+    margin-top: 30px;
+}
+
+#loan-ull li {
+    list-style: none;
+    strong {
+        color: #000;
+    }
+}
+
+.Car.Loan .info-box {
+    background: #fff;
+    border: #dcdcdc solid 1px;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 0 10px;
+    margin: 0 auto 15px;
+    .box-head {
+        background: #db2d2e;
+        padding: 18px 30px;
+        border-radius: 4px 4px 0 0;
+        h5 {
+            color: #fff;
+            line-height: 10px;
+            position: relative;
+            top: 5px;
+        }
+    }
+    .box-body {
+        padding: 25px 30px;
+        .form-group {
+            margin-bottom: 1rem;
+            width: 100%;
+            .form-control {
+                border-radius: 5px;
+            }
+        }
+        button.button.red {
+            width: 100%;
+        }
+    }
+    .date-picker {
+        width: 285px;
+        margin: 0;
+        border: 1px solid #ced4da;
+        border-radius: 5px;
+        // .result {
+        //     line-height: 45px;
+        // }
+    }
+
+}
+
+.help-block {
+    margin: 0;
+    padding: 0;
+}
+
+form#loan input.button.red {
+    width: 100%;
+}
