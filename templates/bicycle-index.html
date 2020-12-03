@@ -1,42 +1,40 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
 <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-
+    
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <title>E-CarKhana</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="{% static 'images/favicon.ico'%}" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
 
     <!-- bootstrap -->
-    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css'%}" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
 
     <!-- flaticon -->
-    <link rel="stylesheet" type="text/css" href="{% static 'css/flaticon.css'%}" />
+    <link rel="stylesheet" type="text/css" href="css/flaticon.css" />
 
     <!-- font awesome -->
-    <link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.min.css'%}" />
-    <link rel="stylesheet" type="text/css" href="{% static 'css/fontawesome.min.css'%}" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/fontawesome.min.css" />
 
     <!-- owl-carousel -->
-    <link rel="stylesheet" type="text/css" href="{% static 'css/owl-carousel/owl.carousel.css'%}" />
+    <link rel="stylesheet" type="text/css" href="css/owl-carousel/owl.carousel.css" />
 
     <!-- slick css -->
-    <link rel="stylesheet" type="text/css" href="{% static 'css/slick.css'%}" />
-    <link rel="stylesheet" type="text/css" href="{% static 'css/slick-theme.css'%}" />
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
 
     <!-- revolution -->
-    <link rel="stylesheet" type="text/css" href="{% static 'revolution/css/settings.css'%}" />
+    <link rel="stylesheet" type="text/css" href="revolution/css/settings.css" />
 
     <!-- main style -->
-    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css'%}" />
-{#    <link rel="stylesheet" type="text/css" href="{% static 'c'%}" />#}
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 
     <!-- swiper -->
-    <link rel="stylesheet" type="text/css" href="{% static 'css/swiper.css'%}" />
+    <link rel="stylesheet" type="text/css" href="css/swiper.css" />
 
 
 
@@ -49,13 +47,12 @@ loading -->
 
     <div id="loading">
         <div id="loading-center">
-            <img src="{% static 'images/loader.gif'%}" alt="">
+            <img src="images/bicycle/Cycle.gif" alt="" class="bike-carkhana">
         </div>
     </div>
 
     <!--=================================
 loading -->
-
 
 <!--=================================
 Ajax loader -->
@@ -63,7 +60,6 @@ Ajax loader -->
 
 <!--=================================
 Ajax loader -->
-
     <!--=================================
 header -->
 
@@ -81,9 +77,7 @@ header -->
                     </div>
                     <div class="col-lg-6 col-md-6">
                         <div class="topbar-right text-lg-right text-center">
-                            <div class="sms-login-btn">
-                                <a href="#" class="btn btn-xs uppercase" data-toggle="modal" data-dismiss="modal" data-target="#loginform"> <i class="fa fa-user"></i></a>
-                            </div>
+
                             <!-- <div class="sms-seller-message-pop">
                 <a href="#" class="sms-message-pop">
                     <i class="fa fa-envelope-o" aria-hidden="true"></i>
@@ -132,19 +126,68 @@ header -->
             </div> -->
                             <div class="sms-seller-dropdown">
                                 <a href="#" class="sms-dropdown">
-                                    <img class="img-circle resize" alt="" src="{% static 'images/user3.jpg'%}"> Showrov <i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+                                    <img class="img-circle resize" alt="" src="images/user3.jpg"> Showrov <i class="fa fa-sort-desc" aria-hidden="true"></i></a>
                                 <ul>
-                                    <li><a href="seller-profile.html">Seller Profile</a></li>
-                                    <li><a href="seller-my-ad.html">Active Ads</a></li>
-                                    <li><a href="seller-message.html">Message Panel</a></li>
+                                    <li><a href="#">My Profile</a></li>
+                                    <li><a href="#">Log Out</a></li>
 
                                 </ul>
                             </div>
 
-                            <div class="sell-car-btn">
-                                <a href="car-ad-post.html" target="_blank" class="button red">Sell Car</a>
-                            </div>
 
+                            <div class="sms-login-btn">
+                                <a href="#" class="btn btn-xs uppercase" data-toggle="modal" data-dismiss="modal" data-target="#loginform"> <i class="fa fa-user"></i></a>
+                            </div>
+                            <div class="sms-menu-add-cart">
+                                <a href="#" id="cart"><i class="fa fa-shopping-cart"></i> Cart <span class="badge">16</span></a>
+                                <div class="shopping-cart">
+                                    <div class="shopping-cart-header">
+                                        <i class="fa fa-shopping-cart cart-icon"></i><span class="badge">16</span>
+                                        <div class="shopping-cart-total">
+                                            <span class="lighter-text">Total:</span>
+                                            <span class="main-color-text total">$461.15</span>
+                                        </div>
+                                    </div>
+                                    <!--end shopping-cart-header -->
+
+                                    <ul class="shopping-cart-items">
+                                        <li class="clearfix">
+                                            <img src="images/bike/cart-img.webp" alt="item1" />
+                                            <span class="item-name">XMREDTREE</span>
+                                            <span class="item-detail">Pack 100</span>
+                                            <span class="item-price">$49.50</span>
+                                            <span class="item-quantity">Quantity: 01</span>
+                                            <span class="sms-cart-delete"><i class="fa fa-trash"></i></span>
+                                        </li>
+
+                                        <li class="clearfix">
+                                            <img src="images/bike/cart-img.webp" alt="item1" />
+                                            <span class="item-name">XMWHREIN</span>
+                                            <span class="item-detail">Pack 100</span>
+                                            <span class="item-price">$34.06</span>
+                                            <span class="item-quantity">Quantity: 10</span>
+                                            <span class="sms-cart-delete"><i class="fa fa-trash"></i></span>
+                                        </li>
+
+                                        <li class="clearfix">
+                                            <img src="images/bike/cart-img.webp" alt="item1" />
+                                            <span class="item-name">XMJBRR</span>
+                                            <span class="item-detail">Pack 25</span>
+                                            <span class="item-price">$14.21</span>
+                                            <span class="item-quantity">Quantity: 5</span>
+                                            <span class="sms-cart-delete"><i class="fa fa-trash"></i></span>
+                                        </li>
+                                    </ul>
+                                    <div class="sms-ecommerce-btn">
+                                        <a href="bike-cart.html" class="button red">View Cart  <i class="fa fa-chevron-right"></i></a>
+                                        <a href="#" class="button red">Checkout <i class="fa fa-chevron-right"></i></a>
+                                    </div>
+                                </div>
+                                <!--end shopping-cart -->
+                            </div>
+                            <div class="sell-car-btn">
+                                <a href="car-ad-post.html" target="_blank" class="button red">Sell Bicycle</a>
+                            </div>
                             <div class="searchBox">
                                 <input class="searchInput" type="text" name="" placeholder="Search">
                                 <button class="searchButton" onclick="window.location.href = 'search-page.html';">
@@ -164,14 +207,14 @@ header -->
             <div class="container">
                 <div id='main-menu' class='main-menu'>
                     <div class="logo">
-                        <a href="index.html"><img src="{% static 'images/logo.png'%}" alt="image" /></a>
+                        <a href="index.html"><img src="images/logo.png" alt="image" /></a>
                     </div>
                     <div class='container-menu'>
                         <nav class='navigation'>
                             <ul class='core-menu'>
-                                <li class="current sms-focus"><a href='{% url 'home' %}'><i class="fa fa-car"></i>Car</a></li>
-                                <li class="sms-focus"><a href='bike-index.html'><i class="fa fa-motorcycle"></i>Bike</a></li>
-                                <li class="sms-focus"><a href='bicycle-index.html'><i class="fa fa-bicycle"></i>Bicycle</a></li>
+                                <li class=" sms-focus"><a href='index.html'><i class="fa fa-car"></i>Car</a></li>
+                                <li class=" sms-focus"><a href='bike-index.html'><i class="fa fa-motorcycle"></i>Bike</a></li>
+                                <li class="current sms-focus"><a href='bicycle-index.html'><i class="fa fa-bicycle"></i>Bicycle</a></li>
                                 <li class="slide"></li>
                             </ul>
 
@@ -184,7 +227,7 @@ header -->
                                 <div class="sms-main-menu">
                                     <nav>
                                         <ul>
-                                            <li class="mobile-menu"><a href='{% url 'home' %}'>Car</a></li>
+                                            <li class="mobile-menu"><a href='index.html'>Car</a></li>
                                             <li class="mobile-menu"><a href='bike-index.html'>Bike</a> </li>
                                             <li class="mobile-menu"><a href='bicycle-index.html'>Bicycle</a>
                                             </li>
@@ -200,10 +243,10 @@ header -->
                                                     <li><a href='car-insurance.html'>Insurance</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="car-listing.html">Buy Cars</a>
+                                            <li><a href="bike-listing.html">Buy Bicycle</a>
                                             </li>
-                                            <li><a href="sell-product-list.html">Sell Cars</a> </li>
-                                            <li><a href="compare-car.html">Comparison</a> </li>
+                                            <li><a href="sell-product-list.html">Sell Bicycle</a> </li>
+                                            <li><a href="bicycle-compare.html">Comparison</a> </li>
                                             <li><a href="auction-product-list.html">Auction</a> </li>
                                             <li><a href="group-buying-list.html">Group Buying</a> </li>
                                         </ul>
@@ -224,84 +267,42 @@ header -->
 
 
     <!--=================================
-rev slider -->
-    <section class="slider">
-        <div id="rev_slider_2_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="car-dealer-03" style="margin:0px auto;background-color:transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
-            <!-- START REVOLUTION SLIDER 5.2.6 fullwidth mode -->
-            <div id="rev_slider_2_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.2.6">
-                <ul>
-                    <!-- SLIDE  -->
-                    <li data-index="rs-5" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="revolution/assets/100x50_3176d-road-bg.jpg"
-                        data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-                        <!-- MAIN IMAGE -->
-                        <img src="{% static 'revolution/assets/3176d-road-bg.jpg'%}" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
-                        <!-- LAYERS -->
-
-                        <!-- LAYER NR. 1 -->
-                        <div class="tp-caption   tp-resizeme" id="slide-5-layer-6" data-x="center" data-hoffset="" data-y="270" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rZ:35deg;sX:1;sY:1;skX:0;skY:0;s:800;e:Power4.easeInOut;"
-                            data-transform_out="opacity:0;s:300;" data-mask_in="x:0px;y:0px;" data-start="1400" data-splitin="chars" data-splitout="none" data-responsive_offset="on" data-elementdelay="0.05" style="z-index: 5; white-space: nowrap; font-size: 30px; line-height: 30px; font-weight: 400; color: rgba(255, 255, 255, 1.00);font-family:Roboto;text-align:center;text-transform:uppercase;">
-                            Welcome to the most stunning </div>
-
-                        <!-- LAYER NR. 2 -->
-                        <div class="tp-caption   tp-resizeme" id="slide-5-layer-7" data-x="center" data-hoffset="" data-y="center" data-voffset="-140" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rZ:35deg;sX:1;sY:1;skX:0;skY:0;s:800;e:Power4.easeInOut;"
-                            data-transform_out="opacity:0;s:300;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-start="1700" data-splitin="chars" data-splitout="none" data-responsive_offset="on" data-elementdelay="0.05" style="z-index: 6; white-space: nowrap; font-size: 70px; line-height: 70px; font-weight: 700; color: rgba(255, 255, 255, 1.00);font-family:Roboto;text-align:center;text-transform:uppercase;">
-                            Car dealer website</div>
-
-
-                        <!-- LAYER NR. 4 -->
-                        <div class="tp-caption   tp-resizeme" id="slide-5-layer-12" data-x="right" data-hoffset="70" data-y="center" data-voffset="135" data-width="['none','none','none','none']" data-height="['none','none','none','none']" data-transform_idle="o:1;" data-transform_in="x:-50px;opacity:0;s:800;e:Power2.easeInOut;"
-                            data-transform_out="opacity:0;s:300;" data-start="620" data-responsive_offset="on" style="z-index: 8;"><img src="revolution/assets/4f45e-07-bmw-s2.png" alt="" data-ww="auto" data-hh="auto" data-no-retina> </div>
-
-                        <!-- LAYER NR. 5 -->
-                        <div class="tp-caption   tp-resizeme" id="slide-5-layer-11" data-x="120" data-y="center" data-voffset="130" data-width="['none','none','none','none']" data-height="['none','none','none','none']" data-transform_idle="o:1;" data-transform_in="x:50px;opacity:0;s:800;e:Power2.easeInOut;"
-                            data-transform_out="opacity:0;s:300;" data-start="200" data-responsive_offset="on" style="z-index: 9;"><img src="revolution/assets/e13ec-06-audi-s2.png" alt="" data-ww="auto" data-hh="auto" data-no-retina> </div>
-                    </li>
-                    <!-- SLIDE  -->
-                    <li data-index="rs-6" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="revolution/assets/100x50_3176d-road-bg.jpg"
-                        data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-                        <!-- MAIN IMAGE -->
-                        <img src="{% static 'revolution/assets/3176d-road-bg.jpg'%}" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
-                        <!-- LAYERS -->
-
-                        <!-- LAYER NR. 1 -->
-                        <div class="tp-caption   tp-resizeme" id="slide-6-layer-4" data-x="3" data-y="center" data-voffset="50" data-width="['none','none','none','none']" data-height="['none','none','none','none']" data-transform_idle="o:1;" data-transform_in="x:50px;opacity:0;s:1500;e:Power3.easeOut;"
-                            data-transform_out="opacity:0;s:300;" data-start="2060" data-responsive_offset="on" style="z-index: 5;"><img src="revolution/assets/74231-04-audi.png" alt="" data-ww="auto" data-hh="auto" data-no-retina> </div>
-
-                        <!-- LAYER NR. 2 -->
-                        <div class="tp-caption   tp-resizeme" id="slide-6-layer-5" data-x="right" data-hoffset="-10" data-y="center" data-voffset="60" data-width="['none','none','none','none']" data-height="['none','none','none','none']" data-transform_idle="o:1;" data-transform_in="x:-50px;opacity:0;s:1500;e:Power3.easeOut;"
-                            data-transform_out="opacity:0;s:300;" data-start="2060" data-responsive_offset="on" style="z-index: 6;"><img src="revolution/assets/35261-05-honda.png" alt="" data-ww="auto" data-hh="auto" data-no-retina> </div>
-
-                        <!-- LAYER NR. 3 -->
-                        <div class="tp-caption   tp-resizeme" id="slide-6-layer-6" data-x="center" data-hoffset="" data-y="270" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rZ:35deg;sX:1;sY:1;skX:0;skY:0;s:300;e:Power4.easeInOut;"
-                            data-transform_out="opacity:0;s:300;" data-mask_in="x:0px;y:0px;" data-start="3260" data-splitin="chars" data-splitout="none" data-responsive_offset="on" data-elementdelay="0.05" style="z-index: 7; white-space: nowrap; font-size: 30px; line-height: 30px; font-weight: 400; color: rgba(255, 255, 255, 1.00);font-family:Roboto;text-align:center;text-transform:uppercase;">
-                            We have everything </div>
-
-                        <!-- LAYER NR. 4 -->
-                        <div class="tp-caption   tp-resizeme" id="slide-6-layer-7" data-x="center" data-hoffset="" data-y="center" data-voffset="-140" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rZ:35deg;sX:1;sY:1;skX:0;skY:0;s:300;e:Power4.easeInOut;"
-                            data-transform_out="opacity:0;s:300;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-start="4290" data-splitin="chars" data-splitout="none" data-responsive_offset="on" data-elementdelay="0.05" style="z-index: 8; white-space: nowrap; font-size: 70px; line-height: 70px; font-weight: 700; color: rgba(255, 255, 255, 1.00);font-family:Roboto;text-align:center;text-transform:uppercase;">
-                            Your car needs! </div>
-
-
-                        <!-- LAYER NR. 6 -->
-                        <div class="tp-caption   tp-resizeme" id="slide-6-layer-3" data-x="right" data-hoffset="159" data-y="center" data-voffset="81" data-width="['none','none','none','none']" data-height="['none','none','none','none']" data-transform_idle="o:1;" data-transform_in="x:-50px;opacity:0;s:1500;e:Power3.easeOut;"
-                            data-transform_out="opacity:0;s:300;" data-start="1220" data-responsive_offset="on" style="z-index: 10;"><img src="revolution/assets/ec416-03-huydai.png" alt="" data-ww="auto" data-hh="auto" data-no-retina> </div>
-
-                        <!-- LAYER NR. 7 -->
-                        <div class="tp-caption   tp-resizeme" id="slide-6-layer-2" data-x="202" data-y="center" data-voffset="80" data-width="['none','none','none','none']" data-height="['none','none','none','none']" data-transform_idle="o:1;" data-transform_in="x:50px;opacity:0;s:1500;e:Power3.easeOut;"
-                            data-transform_out="opacity:0;s:300;" data-start="1200" data-responsive_offset="on" style="z-index: 11;"><img src="revolution/assets/1fa45-02-bmw.png" alt="" data-ww="auto" data-hh="auto" data-no-retina> </div>
-
-                        <!-- LAYER NR. 8 -->
-                        <div class="tp-caption   tp-resizeme" id="slide-6-layer-1" data-x="center" data-hoffset="" data-y="center" data-voffset="100" data-width="['none','none','none','none']" data-height="['none','none','none','none']" data-transform_idle="o:1;" data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:670;e:Power3.easeInOut;"
-                            data-transform_out="opacity:0;s:300;" data-start="500" data-responsive_offset="on" style="z-index: 12;"><img src="revolution/assets/95515-o1-kia.png" alt="" data-ww="auto" data-hh="auto" data-no-retina> </div>
-                    </li>
-                </ul>
-                <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
+bike slider -->
+    <section class="bike-slider">
+        <div class="owl-carousel owl-theme" data-nav-arrow="true" data-nav-dots='false' data-items="1" data-md-items="1" data-sm-items="1" data-xs-items="1" data-space="0">
+            <div class="item">
+                <div class="car-item text-center">
+                    <div class="car-image">
+                        <img class="img-fluid" src="images/bicycle/1slide.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="car-item text-center">
+                    <div class="car-image">
+                        <img class="img-fluid" src="images/bicycle/2slide.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="car-item text-center">
+                    <div class="car-image">
+                        <img class="img-fluid" src="images/bicycle/3slide.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="car-item text-center">
+                    <div class="car-image">
+                        <img class="img-fluid" src="images/bicycle/4slide.jpg" alt="">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!--=================================
-rev slider -->
+Bike slider -->
 
 
     <!--=================================
@@ -314,7 +315,7 @@ Start Form -->
                 <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
                     <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">New</a>
                     <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Used</a>
-                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Recondition</a>
+
 
                 </div>
             </nav>
@@ -322,7 +323,7 @@ Start Form -->
             <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
                 <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                     <div class="sms-bg" class="main_bg white-text">
-                        <h3 class="car-title">Find Your Dream Car</h3>
+                        <h3 class="car-title">Find Your Dream Bicycle</h3>
                         <div class="row">
                             <form action="#" method="get">
                                 <div class="form-group col-md-3 col-sm-6">
@@ -359,11 +360,11 @@ Start Form -->
                                 <div class="form-group col-md-3 col-sm-6">
                                     <button type="submit" class="btn btn-block"><i class="fa fa-search"
                                             aria-hidden="true"></i>
-                                        Search Car </button>
+                                        Search Bicycle </button>
                                 </div>
 
                                 <div class="form-group col-md-12 col-sm-6">
-                                    <div class="sms-advance">Advaned Search</div>
+                                    <div class="sms-advance">Choose your Bicycle</div>
                                 </div>
                                 <div class="sms-toggle-content">
                                     <div class="container">
@@ -467,7 +468,7 @@ Start Form -->
                 </div>
                 <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                     <div class="sms-bg" class="main_bg white-text">
-                        <h3>Find Your Dream Car</h3>
+                        <h3>Find Your Dream Bicycle</h3>
                         <div class="row">
                             <form action="#" method="get">
                                 <div class="form-group col-md-3 col-sm-6">
@@ -504,156 +505,11 @@ Start Form -->
                                 <div class="form-group col-md-3 col-sm-6">
                                     <button type="submit" class="btn btn-block"><i class="fa fa-search"
                                             aria-hidden="true"></i>
-                                        Search Car </button>
+                                        Search Bicycle </button>
                                 </div>
 
                                 <div class="form-group col-md-12 col-sm-6">
-                                    <div class="sms-advance">Advaned Search</div>
-                                </div>
-                                <div class="sms-toggle-content">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="form-group col-md-3 col-sm-6">
-                                                <div class="select">
-                                                    <select class="form-control">
-                                                        <option>Select Brand</option>
-                                                        <option>Audi</option>
-                                                        <option>BMW</option>
-                                                        <option>Nissan</option>
-                                                        <option>Toyota</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-
-
-                                            <div class="form-group col-md-3 col-sm-6">
-                                                <div class="select">
-                                                    <select class="form-control">
-                                                        <option>Select Model </option>
-                                                        <option>New Car</option>
-                                                        <option>Used Car</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="form-group col-md-3 col-sm-6">
-                                                <div class="select">
-                                                    <select class="form-control">
-                                                        <option>Body Type</option>
-                                                        <option>Audi</option>
-                                                        <option>BMW</option>
-                                                        <option>Nissan</option>
-                                                        <option>Toyota</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-
-                                            <div class="form-group col-md-3 col-sm-6">
-                                                <div class="select">
-                                                    <select class="form-control">
-                                                        <option>Budget</option>
-                                                        <option>Audi</option>
-                                                        <option>BMW</option>
-                                                        <option>Nissan</option>
-                                                        <option>Toyota</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-
-                                            <div class="form-group col-md-3 col-sm-6">
-                                                <div class="select">
-                                                    <select class="form-control">
-                                                        <option>Millage</option>
-                                                        <option>Audi</option>
-                                                        <option>BMW</option>
-                                                        <option>Nissan</option>
-                                                        <option>Toyota</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-
-                                            <div class="form-group col-md-3 col-sm-6">
-                                                <div class="select">
-                                                    <select class="form-control">
-                                                        <option>Location</option>
-                                                        <option>Audi</option>
-                                                        <option>BMW</option>
-                                                        <option>Nissan</option>
-                                                        <option>Toyota</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="form-group col-md-3 col-sm-6">
-                                                <div class="select">
-                                                    <select class="form-control">
-                                                        <option>Manufacturing Year</option>
-                                                        <option>Audi</option>
-                                                        <option>BMW</option>
-                                                        <option>Nissan</option>
-                                                        <option>Toyota</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="form-group col-md-3 col-sm-6">
-                                                <div class="select">
-                                                    <select class="form-control">
-                                                        <option>Type of Car </option>
-                                                        <option>New Car</option>
-                                                        <option>Used Car</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                    <div class="sms-bg" class="main_bg white-text">
-                        <h3>Find Your Dream Car</h3>
-                        <div class="row">
-                            <form action="#" method="get">
-                                <div class="form-group col-md-3 col-sm-6">
-                                    <div class="select">
-                                        <select class="form-control">
-                                            <option value="">Select Location </option>
-                                            <option value="">Location 1 </option>
-                                            <option value="">Location 1 </option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="form-group col-md-3 col-sm-6">
-                                    <div class="select">
-                                        <select class="form-control">
-                                            <option>Select Brand</option>
-                                            <option>Audi</option>
-                                            <option>BMW</option>
-                                            <option>Nissan</option>
-                                            <option>Toyota</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="form-group col-md-3 col-sm-6">
-                                    <div class="select">
-                                        <select class="form-control">
-                                            <option>Select Brand</option>
-                                            <option>Audi</option>
-                                            <option>BMW</option>
-                                            <option>Nissan</option>
-                                            <option>Toyota</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="form-group col-md-3 col-sm-6">
-                                    <button type="submit" class="btn btn-block"><i class="fa fa-search"
-                                            aria-hidden="true"></i>
-                                        Search Car </button>
-                                </div>
-
-                                <div class="form-group col-md-12 col-sm-6">
-                                    <div class="sms-advance">Advaned Search</div>
+                                    <div class="sms-advance">Choose your Bicycle</div>
                                 </div>
                                 <div class="sms-toggle-content">
                                     <div class="container">
@@ -774,7 +630,7 @@ Start Service -->
                 <div class="col-md-12">
                     <div class="section-title">
                         <span>What Our Happy Clients say about us</span>
-                        <h2>Services For Your Cars </h2>
+                        <h2>Services For Your Bicycle </h2>
                     </div>
                     <ul class="service">
                         <li>
@@ -838,7 +694,7 @@ Start Service -->
                             <a href="single-accessories.html">
                                 <div class="service_box">
                                     <i class="flaticon-supermarket"></i><br>
-                                    <p> Accessories</p>
+                                    <p>Accessories</p>
                                 </div>
                             </a>
                         </li>
@@ -923,49 +779,6 @@ End Service -->
 
 
 
-
-    <!--=================================
-Start About -->
-    <!-- <section class="about-us-section">
-<div class="container">
-<div class="section-title">
-<h2>Welcome To E carkhana </h2>
-<div class="separator"></div>
-</div>
-
-<div class="row">
-<div class="col-lg-6 col-sm-12">
-    <div class="looking-car">
-        <div class="looking-cat-image"> <img src="images/looking-used-car.png" alt="Image"> </div>
-        <div class="looking-car-content">
-            <h3>Looking <span>Used Car?</span></h3>
-            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.</p>
-            <a href="" class="button red">View Listing<i class="fa fa-chevron-circle-right"
-                    aria-hidden="true"></i></a>
-        </div>
-    </div>
-</div>
-<div class="col-lg-6 col-sm-12">
-    <div class="looking-car">
-        <div class="looking-cat-image"> <img src="images/looking-new-car.png" alt="Image"> </div>
-        <div class="looking-car-content">
-            <h3>Looking <span>New Car?</span></h3>
-            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.</p>
-            <a href="" class="button red">View Listing<i class="fa fa-chevron-circle-right"
-                    aria-hidden="true"></i></a>
-        </div>
-    </div>
-</div>
-</div>
-</div>
-</section> -->
-
-    <!--=================================
-End About -->
-
-
-
-
     <!--=================================
 Start Used Cars In Your City And Budget -->
 
@@ -986,7 +799,7 @@ Start Used Cars In Your City And Budget -->
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="img_holder float-left">
-                                            <img src="{% static 'images/blog-home1.jpg'%}" alt="" class="img-fluid">
+                                            <img src="images/bicycle/new-Cycle-01.jpg" alt="" class="img-fluid">
                                             <div class="hover_icon">
                                                 <a href="single-blog.html" class="hvr_btn"><i
                                                         class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
@@ -1010,7 +823,7 @@ Start Used Cars In Your City And Budget -->
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="img_holder float-left">
-                                            <img src="{% static 'images/blog-home2.jpg'%}" alt="" class="img-fluid">
+                                            <img src="images/bicycle/new-Cycle-02.jpg" alt="" class="img-fluid">
                                             <div class="hover_icon">
                                                 <a href="single-blog.html" class="hvr_btn"><i
                                                         class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
@@ -1041,14 +854,14 @@ Start Used Cars In Your City And Budget -->
                 <div class="col-lg-8 col-sm-12">
                     <div class="section-title">
                         <span>What Our Happy Clients say about us</span>
-                        <h2>New Cars </h2>
+                        <h2>New Bicycles </h2>
                         <div class="separator"></div>
                     </div>
                     <div class="owl-carousel owl-theme" data-nav-arrow="true" data-items="3" data-md-items="3" data-sm-items="2" data-xs-items="1" data-space="20">
                         <div class="item">
                             <div class="car-item text-center">
                                 <div class="car-image">
-                                    <img class="img-fluid" src="{% static 'images/11.jpg'%}" alt="">
+                                    <img class="img-fluid" src="images/bicycle/new-Cycle-01.jpg" alt="">
                                     <div class="car-overlay-banner">
                                         <ul>
                                             <li>
@@ -1064,9 +877,10 @@ Start Used Cars In Your City And Budget -->
                                 </div>
                                 <div class="car-list">
                                     <ul class="list-inline">
-                                        <li><i class="fa fa-registered"></i> 2017</li>
-                                        <li><i class="fa fa-cog"></i> Manual </li>
-                                        <li><i class="fa fa-dashboard"></i> 6,000 mi</li>
+                                        <li><a href="" class="sms-wishlist" data-placement="top" tabindex="0" data-toggle="tooltip" title="Wishlist"><i
+                                                    class="fa fa-heart-o"></i>Wishlist</a></li>
+                                        <li><a href="" class="sms-cart" data-placement="top" tabindex="0" data-toggle="tooltip" title="Cart"><i
+                                                    class="fa fa-cart-plus"></i>Cart</a></li>
                                     </ul>
                                 </div>
                                 <div class="car-content">
@@ -1077,7 +891,7 @@ Start Used Cars In Your City And Budget -->
                                         <i class="fa fa-star orange-color"></i>
                                         <i class="fa fa-star-o orange-color"></i>
                                     </div>
-                                    <a href="single-car-product.html">Acura Rsx</a>
+                                    <a href="single-bike-product.html">Acura Rsx</a>
                                     <div class="separator"></div>
                                     <div class="price">
                                         <span class="old-price">$35,568</span>
@@ -1089,7 +903,7 @@ Start Used Cars In Your City And Budget -->
                         <div class="item">
                             <div class="car-item text-center">
                                 <div class="car-image">
-                                    <img class="img-fluid" src="{% static 'images/12.jpg'%}" alt="">
+                                    <img class="img-fluid" src="images/bicycle/new-Cycle-02.jpg" alt="">
                                     <div class="car-overlay-banner">
                                         <ul>
                                             <li>
@@ -1105,9 +919,10 @@ Start Used Cars In Your City And Budget -->
                                 </div>
                                 <div class="car-list">
                                     <ul class="list-inline">
-                                        <li><i class="fa fa-registered"></i> 2017</li>
-                                        <li><i class="fa fa-cog"></i> Manual </li>
-                                        <li><i class="fa fa-dashboard"></i> 6,000 mi</li>
+                                        <li><a href="" class="sms-wishlist" data-placement="top" tabindex="0" data-toggle="tooltip" title="Wishlist"><i
+                                                    class="fa fa-heart-o"></i>Wishlist</a></li>
+                                        <li><a href="" class="sms-cart" data-placement="top" tabindex="0" data-toggle="tooltip" title="Cart"><i
+                                                    class="fa fa-cart-plus"></i>Cart</a></li>
                                     </ul>
                                 </div>
                                 <div class="car-content">
@@ -1118,7 +933,7 @@ Start Used Cars In Your City And Budget -->
                                         <i class="fa fa-star orange-color"></i>
                                         <i class="fa fa-star-o orange-color"></i>
                                     </div>
-                                    <a href="single-car-product.html">Lexus GS 450h</a>
+                                    <a href="single-bike-product.html">Lexus GS 450h</a>
                                     <div class="separator"></div>
                                     <div class="price">
                                         <span class="old-price">$35,568</span>
@@ -1130,7 +945,7 @@ Start Used Cars In Your City And Budget -->
                         <div class="item">
                             <div class="car-item text-center">
                                 <div class="car-image">
-                                    <img class="img-fluid" src="{% static 'images/16.jpg'%}" alt="">
+                                    <img class="img-fluid" src="images/bicycle/new-Cycle-03.jpg" alt="">
                                     <div class="car-overlay-banner">
                                         <ul>
                                             <li>
@@ -1146,9 +961,10 @@ Start Used Cars In Your City And Budget -->
                                 </div>
                                 <div class="car-list">
                                     <ul class="list-inline">
-                                        <li><i class="fa fa-registered"></i> 2017</li>
-                                        <li><i class="fa fa-cog"></i> Manual </li>
-                                        <li><i class="fa fa-dashboard"></i> 6,000 mi</li>
+                                        <li><a href="" class="sms-wishlist" data-placement="top" tabindex="0" data-toggle="tooltip" title="Wishlist"><i
+                                                    class="fa fa-heart-o"></i>Wishlist</a></li>
+                                        <li><a href="" class="sms-cart" data-placement="top" tabindex="0" data-toggle="tooltip" title="Cart"><i
+                                                    class="fa fa-cart-plus"></i>Cart</a></li>
                                     </ul>
                                 </div>
                                 <div class="car-content">
@@ -1159,7 +975,7 @@ Start Used Cars In Your City And Budget -->
                                         <i class="fa fa-star orange-color"></i>
                                         <i class="fa fa-star-o orange-color"></i>
                                     </div>
-                                    <a href="single-car-product.html">GTA 5 Lowriders DLC</a>
+                                    <a href="single-bike-product.html">GTA 5 Lowriders DLC</a>
                                     <div class="separator"></div>
                                     <div class="price">
                                         <span class="old-price">$35,568</span>
@@ -1171,7 +987,7 @@ Start Used Cars In Your City And Budget -->
                         <div class="item">
                             <div class="car-item text-center">
                                 <div class="car-image">
-                                    <img class="img-fluid" src="{% static 'images/14.jpg'%}" alt="">
+                                    <img class="img-fluid" src="images/bicycle/new-Cycle-01.jpg" alt="">
                                     <div class="car-overlay-banner">
                                         <ul>
                                             <li>
@@ -1187,9 +1003,10 @@ Start Used Cars In Your City And Budget -->
                                 </div>
                                 <div class="car-list">
                                     <ul class="list-inline">
-                                        <li><i class="fa fa-registered"></i> 2017</li>
-                                        <li><i class="fa fa-cog"></i> Manual </li>
-                                        <li><i class="fa fa-dashboard"></i> 6,000 mi</li>
+                                        <li><a href="" class="sms-wishlist" data-placement="top" tabindex="0" data-toggle="tooltip" title="Wishlist"><i
+                                                    class="fa fa-heart-o"></i>Wishlist</a></li>
+                                        <li><a href="" class="sms-cart" data-placement="top" tabindex="0" data-toggle="tooltip" title="Cart"><i
+                                                    class="fa fa-cart-plus"></i>Cart</a></li>
                                     </ul>
                                 </div>
                                 <div class="car-content">
@@ -1200,7 +1017,7 @@ Start Used Cars In Your City And Budget -->
                                         <i class="fa fa-star orange-color"></i>
                                         <i class="fa fa-star-o orange-color"></i>
                                     </div>
-                                    <a href="single-car-product.html">Toyota avalon hybrid </a>
+                                    <a href="single-bike-product.html">Toyota avalon hybrid </a>
                                     <div class="separator"></div>
                                     <div class="price">
                                         <span class="old-price">$35,568</span>
@@ -1212,7 +1029,7 @@ Start Used Cars In Your City And Budget -->
                         <div class="item">
                             <div class="car-item text-center">
                                 <div class="car-image">
-                                    <img class="img-fluid" src="{% static 'images/15.jpg'%}" alt="">
+                                    <img class="img-fluid" src="images/bicycle/new-Cycle-02.jpg" alt="">
                                     <div class="car-overlay-banner">
                                         <ul>
                                             <li>
@@ -1228,9 +1045,10 @@ Start Used Cars In Your City And Budget -->
                                 </div>
                                 <div class="car-list">
                                     <ul class="list-inline">
-                                        <li><i class="fa fa-registered"></i> 2017</li>
-                                        <li><i class="fa fa-cog"></i> Manual </li>
-                                        <li><i class="fa fa-dashboard"></i> 6,000 mi</li>
+                                        <li><a href="" class="sms-wishlist" data-placement="top" tabindex="0" data-toggle="tooltip" title="Wishlist"><i
+                                                    class="fa fa-heart-o"></i>Wishlist</a></li>
+                                        <li><a href="" class="sms-cart" data-placement="top" tabindex="0" data-toggle="tooltip" title="Cart"><i
+                                                    class="fa fa-cart-plus"></i>Cart</a></li>
                                     </ul>
                                 </div>
                                 <div class="car-content">
@@ -1241,7 +1059,7 @@ Start Used Cars In Your City And Budget -->
                                         <i class="fa fa-star orange-color"></i>
                                         <i class="fa fa-star-o orange-color"></i>
                                     </div>
-                                    <a href="single-car-product.html">Hyundai santa fe sport </a>
+                                    <a href="single-bike-product.html">Hyundai santa fe sport </a>
                                     <div class="separator"></div>
                                     <div class="price">
                                         <span class="old-price">$35,568</span>
@@ -1276,7 +1094,7 @@ Start Compare -->
                 <div class="swiper-slide swiper-slide-prev" style="width: 1149px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
                     <div class="tg-compare tg-compare-left">
                         <figure class="tg-leftimginout">
-                            <img src="{% static 'images/tg1.png'%}" alt="image description">
+                            <img src="images/bicycle/compare-cycle-02.png" alt="image description">
                         </figure>
                         <div class="tg-carfeatures">
                             <span class="tg-icon icon-krop-big-logo">SmS</span>
@@ -1305,14 +1123,14 @@ Start Compare -->
                             </div>
                         </div>
                         <figure class="tg-rightimginout">
-                            <img src="{% static 'images/tg2.png'%}" alt="image description">
+                            <img src="images/bicycle/compare-cycle.png" alt="image description">
                         </figure>
                     </div>
                 </div>
                 <div class="swiper-slide swiper-slide-active" style="width: 1149px; opacity: 1; transform: translate3d(-1149px, 0px, 0px); transition-duration: 0ms;">
                     <div class="tg-compare tg-compare-left">
                         <figure>
-                            <img src="{% static 'images/tg1.png'%}" alt="image description">
+                            <img src="images/bicycle/compare-cycle-02.png" alt="image description">
                         </figure>
                         <div class="tg-carfeatures">
                             <span class="tg-icon icon-krop-big-logo">SmS</span>
@@ -1341,14 +1159,14 @@ Start Compare -->
                             </div>
                         </div>
                         <figure>
-                            <img src="{% static 'images/tg2.png'%}" alt="image description">
+                            <img src="images/bicycle/compare-cycle.png" alt="image description">
                         </figure>
                     </div>
                 </div>
                 <div class="swiper-slide swiper-slide-next" style="width: 1149px; opacity: 0; transform: translate3d(-2298px, 0px, 0px); transition-duration: 0ms;">
                     <div class="tg-compare tg-compare-left">
                         <figure>
-                            <img src="{% static 'images/tg1.png'%}" alt="image description">
+                            <img src="images/bicycle/compare-cycle-02.png" alt="image description">
                         </figure>
                         <div class="tg-carfeatures">
                             <span class="tg-icon icon-krop-big-logo">SmS</span>
@@ -1377,14 +1195,14 @@ Start Compare -->
                             </div>
                         </div>
                         <figure>
-                            <img src="{% static 'images/tg2.png'%}" alt="image description">
+                            <img src="images/bicycle/compare-cycle.png" alt="image description">
                         </figure>
                     </div>
                 </div>
                 <div class="swiper-slide" style="width: 1149px; opacity: 0; transform: translate3d(-3447px, 0px, 0px); transition-duration: 0ms;">
                     <div class="tg-compare tg-compare-left">
                         <figure>
-                            <img src="{% static 'images/tg1.png'%}" alt="image description">
+                            <img src="images/bicycle/compare-cycle-02.png" alt="image description">
                         </figure>
                         <div class="tg-carfeatures">
                             <span class="tg-icon icon-krop-big-logo">SmS</span>
@@ -1413,7 +1231,7 @@ Start Compare -->
                             </div>
                         </div>
                         <figure>
-                            <img src="{% static 'images/tg2.png'%}" alt="image description">
+                            <img src="images/bicycle/compare-cycle.png" alt="image description">
                         </figure>
                     </div>
                 </div>
@@ -1436,8 +1254,8 @@ start Featured Cars -->
             <div class="row">
                 <div class="col-md-12">
                     <div class="section-title">
-                        <span>Upcoming Cars Special Offers</span>
-                        <h2>Upcoming Cars </h2>
+                        <span>Upcoming Bike Special Offers</span>
+                        <h2>Upcoming Bicycles </h2>
                         <div class="separator"></div>
                     </div>
                 </div>
@@ -1448,7 +1266,7 @@ start Featured Cars -->
                         <div class="item">
                             <div class="featured-car-list">
                                 <div class="featured-car-img">
-                                    <a href=""><img src="{% static 'images/featured-img-1.jpg'%}" class="img-responsive" alt="Image"></a>
+                                    <a href=""><img src="images/bicycle/upcoming-cycles-01.jpg" class="img-responsive" alt="Image"></a>
                                     <div class="label_icon">New</div>
                                     <div class="compare_item">
                                         <div class="checkbox">
@@ -1456,9 +1274,15 @@ start Featured Cars -->
                                             <label for="compare">Compare</label>
                                         </div>
                                     </div>
+                                    <div class="sms-ecommerce-add">
+                                        <li><a href="" class="sms-wishlist" data-placement="top" tabindex="0" data-toggle="tooltip" title="Wishlist"><i class="fa fa-heart-o"></i></a>
+                                        </li>
+                                        <li><a href="" class="sms-cart" data-placement="top" tabindex="0" data-toggle="tooltip" title="Cart"><i class="fa fa-cart-plus"></i></a>
+                                        </li>
+                                    </div>
                                 </div>
                                 <div class="featured-car-content">
-                                    <h6><a href="single-car-product.html">Maserati QUATTROPORTE 1,6</a></h6>
+                                    <h6><a href="single-bike-product.html">Maserati QUATTROPORTE 1,6</a></h6>
                                     <div class="price_info">
                                         <p class="featured-price">$90,000</p>
                                         <div class="car-location"><span><i class="fa fa-map-marker"
@@ -1468,9 +1292,8 @@ start Featured Cars -->
                                         <li><i class="fa fa-road" aria-hidden="true"></i>0,000 km</li>
                                         <li><i class="fa fa-tachometer" aria-hidden="true"></i>30.000 miles</li>
                                         <li><i class="fa fa-calendar" aria-hidden="true"></i>2005 model</li>
-                                        <li><i class="fa fa-car" aria-hidden="true"></i>Diesel</li>
-                                        <li><i class="fa fa-user" aria-hidden="true"></i>5 seats</li>
                                         <li><i class="fa fa-superpowers" aria-hidden="true"></i>143 kW</li>
+
                                     </ul>
                                 </div>
                             </div>
@@ -1478,7 +1301,7 @@ start Featured Cars -->
                         <div class="item">
                             <div class="featured-car-list">
                                 <div class="featured-car-img">
-                                    <a href=""><img src="{% static 'images/featured-img-2.jpg'%}" class="img-responsive" alt="Image"></a>
+                                    <a href=""><img src="images/bicycle/upcoming-cycles-02.jpg" class="img-responsive" alt="Image"></a>
                                     <div class="label_icon">Used</div>
                                     <div class="compare_item">
                                         <div class="checkbox">
@@ -1486,9 +1309,15 @@ start Featured Cars -->
                                             <label for="compare2">Compare</label>
                                         </div>
                                     </div>
+                                    <div class="sms-ecommerce-add">
+                                        <li><a href="" class="sms-wishlist" data-placement="top" tabindex="0" data-toggle="tooltip" title="Wishlist"><i class="fa fa-heart-o"></i></a>
+                                        </li>
+                                        <li><a href="" class="sms-cart" data-placement="top" tabindex="0" data-toggle="tooltip" title="Cart"><i class="fa fa-cart-plus"></i></a>
+                                        </li>
+                                    </div>
                                 </div>
                                 <div class="featured-car-content">
-                                    <h6><a href="single-car-product.html">Mazda CX-5 SX, V6, ABS, Sunroof</a></h6>
+                                    <h6><a href="single-bike-product.html">Mazda CX-5 SX, V6, ABS, Sunroof</a></h6>
                                     <div class="price_info">
                                         <p class="featured-price">$90,000</p>
                                         <div class="car-location"><span><i class="fa fa-map-marker"
@@ -1498,8 +1327,6 @@ start Featured Cars -->
                                         <li><i class="fa fa-road" aria-hidden="true"></i>0,000 km</li>
                                         <li><i class="fa fa-tachometer" aria-hidden="true"></i>30.000 miles</li>
                                         <li><i class="fa fa-calendar" aria-hidden="true"></i>2005 model</li>
-                                        <li><i class="fa fa-car" aria-hidden="true"></i>Diesel</li>
-                                        <li><i class="fa fa-user" aria-hidden="true"></i>5 seats</li>
                                         <li><i class="fa fa-superpowers" aria-hidden="true"></i>143 kW</li>
                                     </ul>
                                 </div>
@@ -1508,7 +1335,7 @@ start Featured Cars -->
                         <div class="item">
                             <div class="featured-car-list">
                                 <div class="featured-car-img">
-                                    <a href=""><img src="{% static 'images/featured-img-3.jpg'%}" class="img-responsive" alt="Image"></a>
+                                    <a href=""><img src="images/bicycle/upcoming-cycles-03.jpg" class="img-responsive" alt="Image"></a>
                                     <div class="label_icon">Used</div>
                                     <div class="compare_item">
                                         <div class="checkbox">
@@ -1516,9 +1343,15 @@ start Featured Cars -->
                                             <label for="compare3">Compare</label>
                                         </div>
                                     </div>
+                                    <div class="sms-ecommerce-add">
+                                        <li><a href="" class="sms-wishlist" data-placement="top" tabindex="0" data-toggle="tooltip" title="Wishlist"><i class="fa fa-heart-o"></i></a>
+                                        </li>
+                                        <li><a href="" class="sms-cart" data-placement="top" tabindex="0" data-toggle="tooltip" title="Cart"><i class="fa fa-cart-plus"></i></a>
+                                        </li>
+                                    </div>
                                 </div>
                                 <div class="featured-car-content">
-                                    <h6><a href="single-car-product.html">BMW 535i</a></h6>
+                                    <h6><a href="single-bike-product.html">BMW 535i</a></h6>
                                     <div class="price_info">
                                         <p class="featured-price">$90,000</p>
                                         <div class="car-location"><span><i class="fa fa-map-marker"
@@ -1528,8 +1361,6 @@ start Featured Cars -->
                                         <li><i class="fa fa-road" aria-hidden="true"></i>0,000 km</li>
                                         <li><i class="fa fa-tachometer" aria-hidden="true"></i>30.000 miles</li>
                                         <li><i class="fa fa-calendar" aria-hidden="true"></i>2005 model</li>
-                                        <li><i class="fa fa-car" aria-hidden="true"></i>Diesel</li>
-                                        <li><i class="fa fa-user" aria-hidden="true"></i>5 seats</li>
                                         <li><i class="fa fa-superpowers" aria-hidden="true"></i>143 kW</li>
                                     </ul>
                                 </div>
@@ -1538,7 +1369,7 @@ start Featured Cars -->
                         <div class="item">
                             <div class="featured-car-list">
                                 <div class="featured-car-img">
-                                    <a href=""><img src="{% static 'images/featured-img-1.jpg'%}" class="img-responsive" alt="Image"></a>
+                                    <a href=""><img src="images/bicycle/upcoming-cycles-01.jpg" class="img-responsive" alt="Image"></a>
                                     <div class="label_icon">Used</div>
                                     <div class="compare_item">
                                         <div class="checkbox">
@@ -1546,9 +1377,15 @@ start Featured Cars -->
                                             <label for="compare3">Compare</label>
                                         </div>
                                     </div>
+                                    <div class="sms-ecommerce-add">
+                                        <li><a href="" class="sms-wishlist" data-placement="top" tabindex="0" data-toggle="tooltip" title="Wishlist"><i class="fa fa-heart-o"></i></a>
+                                        </li>
+                                        <li><a href="" class="sms-cart" data-placement="top" tabindex="0" data-toggle="tooltip" title="Cart"><i class="fa fa-cart-plus"></i></a>
+                                        </li>
+                                    </div>
                                 </div>
                                 <div class="featured-car-content">
-                                    <h6><a href="single-car-product.html">BMW 535i</a></h6>
+                                    <h6><a href="single-bike-product.html">BMW 535i</a></h6>
                                     <div class="price_info">
                                         <p class="featured-price">$90,000</p>
                                         <div class="car-location"><span><i class="fa fa-map-marker"
@@ -1558,8 +1395,6 @@ start Featured Cars -->
                                         <li><i class="fa fa-road" aria-hidden="true"></i>0,000 km</li>
                                         <li><i class="fa fa-tachometer" aria-hidden="true"></i>30.000 miles</li>
                                         <li><i class="fa fa-calendar" aria-hidden="true"></i>2005 model</li>
-                                        <li><i class="fa fa-car" aria-hidden="true"></i>Diesel</li>
-                                        <li><i class="fa fa-user" aria-hidden="true"></i>5 seats</li>
                                         <li><i class="fa fa-superpowers" aria-hidden="true"></i>143 kW</li>
                                     </ul>
                                 </div>
@@ -1568,7 +1403,7 @@ start Featured Cars -->
                         <div class="item">
                             <div class="featured-car-list">
                                 <div class="featured-car-img">
-                                    <a href=""><img src="{% static 'images/featured-img-2.jpg'%}" class="img-responsive" alt="Image"></a>
+                                    <a href=""><img src="images/bicycle/upcoming-cycles-02.jpg" class="img-responsive" alt="Image"></a>
                                     <div class="label_icon">Used</div>
                                     <div class="compare_item">
                                         <div class="checkbox">
@@ -1576,9 +1411,15 @@ start Featured Cars -->
                                             <label for="compare2">Compare</label>
                                         </div>
                                     </div>
+                                    <div class="sms-ecommerce-add">
+                                        <li><a href="" class="sms-wishlist" data-placement="top" tabindex="0" data-toggle="tooltip" title="Wishlist"><i class="fa fa-heart-o"></i></a>
+                                        </li>
+                                        <li><a href="" class="sms-cart" data-placement="top" tabindex="0" data-toggle="tooltip" title="Cart"><i class="fa fa-cart-plus"></i></a>
+                                        </li>
+                                    </div>
                                 </div>
                                 <div class="featured-car-content">
-                                    <h6><a href="single-car-product.html">Mazda CX-5 SX, V6, ABS, Sunroof</a></h6>
+                                    <h6><a href="single-bike-product.html">Mazda CX-5 SX, V6, ABS, Sunroof</a></h6>
                                     <div class="price_info">
                                         <p class="featured-price">$90,000</p>
                                         <div class="car-location"><span><i class="fa fa-map-marker"
@@ -1588,8 +1429,6 @@ start Featured Cars -->
                                         <li><i class="fa fa-road" aria-hidden="true"></i>0,000 km</li>
                                         <li><i class="fa fa-tachometer" aria-hidden="true"></i>30.000 miles</li>
                                         <li><i class="fa fa-calendar" aria-hidden="true"></i>2005 model</li>
-                                        <li><i class="fa fa-car" aria-hidden="true"></i>Diesel</li>
-                                        <li><i class="fa fa-user" aria-hidden="true"></i>5 seats</li>
                                         <li><i class="fa fa-superpowers" aria-hidden="true"></i>143 kW</li>
                                     </ul>
                                 </div>
@@ -1598,7 +1437,7 @@ start Featured Cars -->
                         <div class="item">
                             <div class="featured-car-list">
                                 <div class="featured-car-img">
-                                    <a href=""><img src="{% static 'images/featured-img-3.jpg'%}" class="img-responsive" alt="Image"></a>
+                                    <a href=""><img src="images/bicycle/upcoming-cycles-03.jpg" class="img-responsive" alt="Image"></a>
                                     <div class="label_icon">Used</div>
                                     <div class="compare_item">
                                         <div class="checkbox">
@@ -1606,9 +1445,15 @@ start Featured Cars -->
                                             <label for="compare3">Compare</label>
                                         </div>
                                     </div>
+                                    <div class="sms-ecommerce-add">
+                                        <li><a href="" class="sms-wishlist" data-placement="top" tabindex="0" data-toggle="tooltip" title="Wishlist"><i class="fa fa-heart-o"></i></a>
+                                        </li>
+                                        <li><a href="" class="sms-cart" data-placement="top" tabindex="0" data-toggle="tooltip" title="Cart"><i class="fa fa-cart-plus"></i></a>
+                                        </li>
+                                    </div>
                                 </div>
                                 <div class="featured-car-content">
-                                    <h6><a href="single-car-product.html">BMW 535i</a></h6>
+                                    <h6><a href="single-bike-product.html">BMW 535i</a></h6>
                                     <div class="price_info">
                                         <p class="featured-price">$90,000</p>
                                         <div class="car-location"><span><i class="fa fa-map-marker"
@@ -1618,8 +1463,6 @@ start Featured Cars -->
                                         <li><i class="fa fa-road" aria-hidden="true"></i>0,000 km</li>
                                         <li><i class="fa fa-tachometer" aria-hidden="true"></i>30.000 miles</li>
                                         <li><i class="fa fa-calendar" aria-hidden="true"></i>2005 model</li>
-                                        <li><i class="fa fa-car" aria-hidden="true"></i>Diesel</li>
-                                        <li><i class="fa fa-user" aria-hidden="true"></i>5 seats</li>
                                         <li><i class="fa fa-superpowers" aria-hidden="true"></i>143 kW</li>
                                     </ul>
                                 </div>
@@ -1644,12 +1487,12 @@ Start Banner -->
             <div class="row">
                 <div class="col-md-6">
                     <div class="wpb_single_image">
-                        <img src="{% static 'images/banner.png'%}">
+                        <img src="images/bicycle/Cycle-ad-01.jpg">
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="wpb_single_image">
-                        <img src="{% static 'images/banner1.png'%}">
+                        <img src="images/bicycle/Cycle-ad-02.jpg">
                     </div>
                 </div>
             </div>
@@ -1669,15 +1512,15 @@ Start Popular car -->
             <div class="row">
                 <div class="col-md-12">
                     <div class="section-title">
-                        <span>Top 10 Popular car in Dhaka</span>
-                        <h2>Popular Cars </h2>
+                        <span>Top 10 Popular bike in Dhaka</span>
+                        <h2>Popular Bicycles </h2>
                         <div class="separator"></div>
                     </div>
                     <div class="owl-carousel owl-theme" data-nav-arrow="true" data-items="4" data-md-items="4" data-sm-items="2" data-xs-items="1" data-space="20">
                         <div class="item">
                             <div class="car-item text-center">
                                 <div class="car-image">
-                                    <img class="img-fluid" src="{% static 'images/11.jpg'%}" alt="">
+                                    <img class="img-fluid" src="images/bicycle/new-Cycle-01.jpg" alt="">
                                     <div class="car-overlay-banner">
                                         <ul>
                                             <li>
@@ -1693,9 +1536,12 @@ Start Popular car -->
                                 </div>
                                 <div class="car-list">
                                     <ul class="list-inline">
-                                        <li><i class="fa fa-registered"></i> 2017</li>
-                                        <li><i class="fa fa-cog"></i> Manual </li>
-                                        <li><i class="fa fa-dashboard"></i> 6,000 mi</li>
+                                        <li><a href="" class="sms-wishlist" data-toggle="tooltip" data-placement="bottom" title="Wishlist"><i
+                                                    class="fa fa-heart-o"></i>Wishlist</a>
+                                        </li>
+                                        <li><a href="" class="sms-cart" data-toggle="tooltip" data-placement="bottom" title="Cart"><i
+                                                    class="fa fa-cart-plus"></i>Cart</a>
+                                        </li>
                                     </ul>
                                 </div>
                                 <div class="car-content">
@@ -1706,7 +1552,7 @@ Start Popular car -->
                                         <i class="fa fa-star orange-color"></i>
                                         <i class="fa fa-star-o orange-color"></i>
                                     </div>
-                                    <a href="single-car-product.html">Acura Rsx</a>
+                                    <a href="single-bike-product.html">Acura Rsx</a>
                                     <div class="separator"></div>
                                     <div class="price">
                                         <span class="old-price">$35,568</span>
@@ -1718,7 +1564,7 @@ Start Popular car -->
                         <div class="item">
                             <div class="car-item text-center">
                                 <div class="car-image">
-                                    <img class="img-fluid" src="i{% static 'mages/12.jpg'%}" alt="">
+                                    <img class="img-fluid" src="images/bicycle/new-Cycle-02.jpg" alt="">
                                     <div class="car-overlay-banner">
                                         <ul>
                                             <li>
@@ -1734,9 +1580,12 @@ Start Popular car -->
                                 </div>
                                 <div class="car-list">
                                     <ul class="list-inline">
-                                        <li><i class="fa fa-registered"></i> 2017</li>
-                                        <li><i class="fa fa-cog"></i> Manual </li>
-                                        <li><i class="fa fa-dashboard"></i> 6,000 mi</li>
+                                        <li><a href="" class="sms-wishlist" data-toggle="tooltip" data-placement="bottom" title="Wishlist"><i
+                                                            class="fa fa-heart-o"></i>Wishlist</a>
+                                        </li>
+                                        <li><a href="" class="sms-cart" data-toggle="tooltip" data-placement="bottom" title="Cart"><i
+                                                            class="fa fa-cart-plus"></i>Cart</a>
+                                        </li>
                                     </ul>
                                 </div>
                                 <div class="car-content">
@@ -1747,7 +1596,7 @@ Start Popular car -->
                                         <i class="fa fa-star orange-color"></i>
                                         <i class="fa fa-star-o orange-color"></i>
                                     </div>
-                                    <a href="single-car-product.html">Lexus GS 450h</a>
+                                    <a href="single-bike-product.html">Lexus GS 450h</a>
                                     <div class="separator"></div>
                                     <div class="price">
                                         <span class="old-price">$35,568</span>
@@ -1759,7 +1608,7 @@ Start Popular car -->
                         <div class="item">
                             <div class="car-item text-center">
                                 <div class="car-image">
-                                    <img class="img-fluid" src="{% static 'images/16.jpg'%}" alt="">
+                                    <img class="img-fluid" src="images/bicycle/new-Cycle-03.jpg" alt="">
                                     <div class="car-overlay-banner">
                                         <ul>
                                             <li>
@@ -1775,9 +1624,12 @@ Start Popular car -->
                                 </div>
                                 <div class="car-list">
                                     <ul class="list-inline">
-                                        <li><i class="fa fa-registered"></i> 2017</li>
-                                        <li><i class="fa fa-cog"></i> Manual </li>
-                                        <li><i class="fa fa-dashboard"></i> 6,000 mi</li>
+                                        <li><a href="" class="sms-wishlist" data-toggle="tooltip" data-placement="bottom" title="Wishlist"><i
+                                                            class="fa fa-heart-o"></i>Wishlist</a>
+                                        </li>
+                                        <li><a href="" class="sms-cart" data-toggle="tooltip" data-placement="bottom" title="Cart"><i
+                                                            class="fa fa-cart-plus"></i>Cart</a>
+                                        </li>
                                     </ul>
                                 </div>
                                 <div class="car-content">
@@ -1788,7 +1640,7 @@ Start Popular car -->
                                         <i class="fa fa-star orange-color"></i>
                                         <i class="fa fa-star-o orange-color"></i>
                                     </div>
-                                    <a href="single-car-product.html">GTA 5 Lowriders DLC</a>
+                                    <a href="single-bike-product.html">GTA 5 Lowriders DLC</a>
                                     <div class="separator"></div>
                                     <div class="price">
                                         <span class="old-price">$35,568</span>
@@ -1800,7 +1652,7 @@ Start Popular car -->
                         <div class="item">
                             <div class="car-item text-center">
                                 <div class="car-image">
-                                    <img class="img-fluid" src="{% static 'images/14.jpg'%}" alt="">
+                                    <img class="img-fluid" src="images/bicycle/new-Cycle-01.jpg" alt="">
                                     <div class="car-overlay-banner">
                                         <ul>
                                             <li>
@@ -1816,9 +1668,12 @@ Start Popular car -->
                                 </div>
                                 <div class="car-list">
                                     <ul class="list-inline">
-                                        <li><i class="fa fa-registered"></i> 2017</li>
-                                        <li><i class="fa fa-cog"></i> Manual </li>
-                                        <li><i class="fa fa-dashboard"></i> 6,000 mi</li>
+                                        <li><a href="" class="sms-wishlist" data-toggle="tooltip" data-placement="bottom" title="Wishlist"><i
+                                                            class="fa fa-heart-o"></i>Wishlist</a>
+                                        </li>
+                                        <li><a href="" class="sms-cart" data-toggle="tooltip" data-placement="bottom" title="Cart"><i
+                                                            class="fa fa-cart-plus"></i>Cart</a>
+                                        </li>
                                     </ul>
                                 </div>
                                 <div class="car-content">
@@ -1829,7 +1684,7 @@ Start Popular car -->
                                         <i class="fa fa-star orange-color"></i>
                                         <i class="fa fa-star-o orange-color"></i>
                                     </div>
-                                    <a href="single-car-product.html">Toyota avalon hybrid </a>
+                                    <a href="single-bike-product.html">Toyota avalon hybrid </a>
                                     <div class="separator"></div>
                                     <div class="price">
                                         <span class="old-price">$35,568</span>
@@ -1841,7 +1696,7 @@ Start Popular car -->
                         <div class="item">
                             <div class="car-item text-center">
                                 <div class="car-image">
-                                    <img class="img-fluid" src="{% static 'images/15.jpg'%}" alt="">
+                                    <img class="img-fluid" src="images/bicycle/new-Cycle-02.jpg" alt="">
                                     <div class="car-overlay-banner">
                                         <ul>
                                             <li>
@@ -1857,9 +1712,12 @@ Start Popular car -->
                                 </div>
                                 <div class="car-list">
                                     <ul class="list-inline">
-                                        <li><i class="fa fa-registered"></i> 2017</li>
-                                        <li><i class="fa fa-cog"></i> Manual </li>
-                                        <li><i class="fa fa-dashboard"></i> 6,000 mi</li>
+                                        <li><a href="" class="sms-wishlist" data-toggle="tooltip" data-placement="bottom" title="Wishlist"><i
+                                                            class="fa fa-heart-o"></i>Wishlist</a>
+                                        </li>
+                                        <li><a href="" class="sms-cart" data-toggle="tooltip" data-placement="bottom" title="Cart"><i
+                                                            class="fa fa-cart-plus"></i>Cart</a>
+                                        </li>
                                     </ul>
                                 </div>
                                 <div class="car-content">
@@ -1870,7 +1728,7 @@ Start Popular car -->
                                         <i class="fa fa-star orange-color"></i>
                                         <i class="fa fa-star-o orange-color"></i>
                                     </div>
-                                    <a href="single-car-product.html">Hyundai santa fe sport </a>
+                                    <a href="single-bike-product.html">Hyundai santa fe sport </a>
                                     <div class="separator"></div>
                                     <div class="price">
                                         <span class="old-price">$35,568</span>
@@ -1902,92 +1760,92 @@ Start business partner -->
                             <div class="owl-stage" style="transform: translate3d(-2530px, 0px, 0px); transition: all 0.25s ease 0s; width: 4140px;">
                                 <div class="owl-item cloned" style="width: 220px; margin-right: 10px;">
                                     <div class="item">
-                                        <img class="img-fluid center-block" src="{% static 'images/p1.png'%}" alt="">
+                                        <img class="img-fluid center-block" src="images/p1.png" alt="">
                                     </div>
                                 </div>
                                 <div class="owl-item cloned" style="width: 220px; margin-right: 10px;">
                                     <div class="item">
-                                        <img class="img-fluid center-block" src="{% static 'images/p2.png'%}" alt="">
+                                        <img class="img-fluid center-block" src="images/p2.png" alt="">
                                     </div>
                                 </div>
                                 <div class="owl-item cloned" style="width: 220px; margin-right: 10px;">
                                     <div class="item">
-                                        <img class="img-fluid center-block" src="{% static 'images/p3.png'%}" alt="">
+                                        <img class="img-fluid center-block" src="images/p3.png" alt="">
                                     </div>
                                 </div>
                                 <div class="owl-item cloned" style="width: 220px; margin-right: 10px;">
                                     <div class="item">
-                                        <img class="img-fluid center-block" src="{% static 'images/p4.png'%}" alt="">
+                                        <img class="img-fluid center-block" src="images/p4.png" alt="">
                                     </div>
                                 </div>
                                 <div class="owl-item cloned" style="width: 220px; margin-right: 10px;">
                                     <div class="item">
-                                        <img class="img-fluid center-block" src="{% static 'images/p5.png'%}" alt="">
+                                        <img class="img-fluid center-block" src="images/p5.png" alt="">
                                     </div>
                                 </div>
                                 <div class="owl-item" style="width: 220px; margin-right: 10px;">
                                     <div class="item">
-                                        <img class="img-fluid center-block" src="{% static 'images/p6.png'%}" alt="">
+                                        <img class="img-fluid center-block" src="images/p6.png" alt="">
                                     </div>
                                 </div>
                                 <div class="owl-item" style="width: 220px; margin-right: 10px;">
                                     <div class="item">
-                                        <img class="img-fluid center-block" src="{% static 'images/p4.png'%}" alt="">
+                                        <img class="img-fluid center-block" src="images/p4.png" alt="">
                                     </div>
                                 </div>
                                 <div class="owl-item" style="width: 220px; margin-right: 10px;">
                                     <div class="item">
-                                        <img class="img-fluid center-block" src="{% static 'images/p1.png'%}" alt="">
+                                        <img class="img-fluid center-block" src="images/p1.png" alt="">
                                     </div>
                                 </div>
                                 <div class="owl-item" style="width: 220px; margin-right: 10px;">
                                     <div class="item">
-                                        <img class="img-fluid center-block" src="{% static 'images/p2.png'%}" alt="">
+                                        <img class="img-fluid center-block" src="images/p2.png" alt="">
                                     </div>
                                 </div>
                                 <div class="owl-item" style="width: 220px; margin-right: 10px;">
                                     <div class="item">
-                                        <img class="img-fluid center-block" src="{% static 'images/p3.png'%}" alt="">
+                                        <img class="img-fluid center-block" src="images/p3.png" alt="">
                                     </div>
                                 </div>
                                 <div class="owl-item" style="width: 220px; margin-right: 10px;">
                                     <div class="item">
-                                        <img class="img-fluid center-block" src="{% static 'images/p4.png'%}" alt="">
+                                        <img class="img-fluid center-block" src="images/p4.png" alt="">
                                     </div>
                                 </div>
                                 <div class="owl-item active" style="width: 220px; margin-right: 10px;">
                                     <div class="item">
-                                        <img class="img-fluid center-block" src="{% static 'images/p1.png'%}" alt="">
+                                        <img class="img-fluid center-block" src="images/p1.png" alt="">
                                     </div>
                                 </div>
                                 <div class="owl-item active" style="width: 220px; margin-right: 10px;">
                                     <div class="item">
-                                        <img class="img-fluid center-block" src="{% static 'images/p5.png'%}" alt="">
+                                        <img class="img-fluid center-block" src="images/p5.png" alt="">
                                     </div>
                                 </div>
                                 <div class="owl-item cloned active" style="width: 220px; margin-right: 10px;">
                                     <div class="item">
-                                        <img class="img-fluid center-block" src="{% static 'images/p3.png'%}" alt="">
+                                        <img class="img-fluid center-block" src="images/p3.png" alt="">
                                     </div>
                                 </div>
                                 <div class="owl-item cloned active" style="width: 220px; margin-right: 10px;">
                                     <div class="item">
-                                        <img class="img-fluid center-block" src="{% static 'images/p2.png'%}" alt="">
+                                        <img class="img-fluid center-block" src="images/p2.png" alt="">
                                     </div>
                                 </div>
                                 <div class="owl-item cloned active" style="width: 220px; margin-right: 10px;">
                                     <div class="item">
-                                        <img class="img-fluid center-block" src="{% static 'images/p5.png'%}" alt="">
+                                        <img class="img-fluid center-block" src="images/p5.png" alt="">
                                     </div>
                                 </div>
                                 <div class="owl-item cloned" style="width: 220px; margin-right: 10px;">
                                     <div class="item">
-                                        <img class="img-fluid center-block" src="{% static 'images/p3.png'%}" alt="">
+                                        <img class="img-fluid center-block" src="images/p3.png" alt="">
                                     </div>
                                 </div>
                                 <div class="owl-item cloned" style="width: 220px; margin-right: 10px;">
                                     <div class="item">
-                                        <img class="img-fluid center-block" src="{% static 'images/p1.png'%}" alt="">
+                                        <img class="img-fluid center-block" src="images/p1.png" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -2009,7 +1867,7 @@ End business partner -->
     <!--=================================
 footer -->
 
-    <footer class="footer bg-2 bg-overlay-black-90">
+    <footer class="footer bg-2 bg-overlay-black-90" style="background-image: url(images/bike/bike-title.jpg);">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -2028,7 +1886,7 @@ footer -->
             <div class="row">
                 <div class="col-lg-4 col-md-12">
                     <div class="about-content">
-                        <img class="img-fluid" id="logo-footer" src="{% static 'images/logo.png'%}" alt="">
+                        <img class="img-fluid" id="logo-footer" src="images/logo.png" alt="">
                         <p>We provide everything you need to build an amazing dealership website developed especially for car sellers dealers or auto motor retailers.</p>
                     </div>
                     <div class="address">
@@ -2057,7 +1915,7 @@ footer -->
                         <h6 class="text-white">recent posts </h6>
                         <div class="recent-post">
                             <div class="recent-post-image">
-                                <img class="img-fluid" src="{% static 'images/car01.jpg'%}" alt="">
+                                <img class="img-fluid" src="images/bicycle/new-Cycle-01.jpg" alt="">
                             </div>
                             <div class="recent-post-info">
                                 <a href="#">Time to change your </a>
@@ -2066,7 +1924,7 @@ footer -->
                         </div>
                         <div class="recent-post">
                             <div class="recent-post-image">
-                                <img class="img-fluid" src="{% static 'images/car02.jpg'%}" alt="">
+                                <img class="img-fluid" src="images/bicycle/new-Cycle-02.jpg" alt="">
                             </div>
                             <div class="recent-post-info">
                                 <a href="#">The best time to </a>
@@ -2075,7 +1933,7 @@ footer -->
                         </div>
                         <div class="recent-post">
                             <div class="recent-post-image">
-                                <img class="img-fluid" src="{% static 'images/car03.jpg'%}" alt="">
+                                <img class="img-fluid" src="images/bicycle/new-Cycle-03.jpg" alt="">
                             </div>
                             <div class="recent-post-info">
                                 <a href="#">Replacing a timing </a>
@@ -2122,8 +1980,8 @@ footer -->
     <!--=================================
 back to top -->
 
-    <div class="car-top">
-        <span><img src="{% static 'images/car.png'%}" alt=""></span>
+    <div class="car-top bike-top">
+        <span><img src="images/bike/bike-add-top.png" alt=""></span>
     </div>
 
     <!--=================================
@@ -2138,7 +1996,7 @@ back to top -->
                 <div class="chat_header">
                     <div class="chat_option">
                         <div class="header_img">
-                            <img src="{% static 'images/chat-avatar.jpg'%}" />
+                            <img src="images/chat-avatar.jpg" />
                         </div>
                         <span id="chat_head">Jane Doe</span> <br> <span class="agent">Agent</span> <span class="online">(Online)</span>
 
@@ -2154,20 +2012,20 @@ back to top -->
                 <div id="chat_converse" class="chat_conversion chat_converse">
                     <a id="chat_second_screen" class="fab"><i class="fa fa-arrow-right"></i></a>
                     <span class="chat_msg_item chat_msg_item_admin">
-                    <div class="chat_avatar">
-                        <img src="{% static 'images/chat-avatar.jpg'%}" />
-                    </div>Hey there! Any question?
-                </span>
+                        <div class="chat_avatar">
+                            <img src="images/chat-avatar.jpg" />
+                        </div>Hey there! Any question?
+                    </span>
                     <span class="chat_msg_item chat_msg_item_user">
-                    Hello!</span>
+                        Hello!</span>
                     <span class="status">20m ago</span>
                     <span class="chat_msg_item chat_msg_item_admin">
-                    <div class="chat_avatar">
-                        <img src="{% static 'images/chat-avatar.jpg'%}" />
-                    </div>Hey! Would you like to talk sales, support, or anyone?
-                </span>
+                        <div class="chat_avatar">
+                            <img src="images/chat-avatar.jpg" />
+                        </div>Hey! Would you like to talk sales, support, or anyone?
+                    </span>
                     <span class="chat_msg_item chat_msg_item_user">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
                     <span class="status2">Just now. Not seen yet</span>
                 </div>
                 <div id="chat_body" class="chat_body">
@@ -2186,82 +2044,82 @@ back to top -->
                 <div id="chat_form" class="chat_converse chat_form">
                     <a id="chat_fourth_screen" class="fab"><i class="fa fa-arrow-right"></i></a>
                     <span class="chat_msg_item chat_msg_item_admin">
-                    <div class="chat_avatar">
-                        <img src="{% static 'images/chat-avatar.jpg'%}" />
-                    </div>Hey there! Any question?
-                </span>
+                        <div class="chat_avatar">
+                            <img src="images/chat-avatar.jpg" />
+                        </div>Hey there! Any question?
+                    </span>
                     <span class="chat_msg_item chat_msg_item_user">
-                    Hello!</span>
+                        Hello!</span>
                     <span class="status">20m ago</span>
                     <span class="chat_msg_item chat_msg_item_admin">
-                    <div class="chat_avatar">
-                        <img src="{% static 'images/chat-avatar.jpg'%}" />
-                    </div>Agent typically replies in a few hours. Don't miss their reply.
-                    <div>
-                        <br>
-                        <form class="get-notified">
-                            <label for="chat_log_email">Get notified by email</label>
-                            <input id="chat_log_email" placeholder="Enter your email" />
-                            <i class="fa fa-arrow-right"></i>
-                        </form>
-                    </div>
-                </span>
+                        <div class="chat_avatar">
+                            <img src="images/chat-avatar.jpg" />
+                        </div>Agent typically replies in a few hours. Don't miss their reply.
+                        <div>
+                            <br>
+                            <form class="get-notified">
+                                <label for="chat_log_email">Get notified by email</label>
+                                <input id="chat_log_email" placeholder="Enter your email" />
+                                <i class="fa fa-arrow-right"></i>
+                            </form>
+                        </div>
+                    </span>
 
                     <span class="chat_msg_item chat_msg_item_admin">
-                    <div class="chat_avatar">
-                        <img src="{% static 'images/chat-avatar.jpg'%}" />
-                    </div>Send message to agent.
-                    <div>
-                        <form class="message_form">
-                            <input placeholder="Your email" />
-                            <input placeholder="Technical issue" />
-                            <textarea rows="4" placeholder="Your message"></textarea>
-                            <button>Send</button>
-                        </form>
+                        <div class="chat_avatar">
+                            <img src="images/chat-avatar.jpg" />
+                        </div>Send message to agent.
+                        <div>
+                            <form class="message_form">
+                                <input placeholder="Your email" />
+                                <input placeholder="Technical issue" />
+                                <textarea rows="4" placeholder="Your message"></textarea>
+                                <button>Send</button>
+                            </form>
 
-                    </div>
-                </span>
+                        </div>
+                    </span>
                 </div>
                 <div id="chat_fullscreen" class="chat_conversion chat_converse">
                     <span class="chat_msg_item chat_msg_item_admin">
-                    <div class="chat_avatar">
-                        <img src="{% static 'images/chat-avatar.jpg'%}" />
-                    </div>Hey there! Any question?
-                </span>
+                        <div class="chat_avatar">
+                            <img src="images/chat-avatar.jpg" />
+                        </div>Hey there! Any question?
+                    </span>
                     <span class="chat_msg_item chat_msg_item_user">
-                    Hello!</span>
+                        Hello!</span>
                     <div class="status">20m ago</div>
                     <span class="chat_msg_item chat_msg_item_admin">
-                    <div class="chat_avatar">
-                        <img src="{% static 'images/chat-avatar.jpg'%}" />
-                    </div>Hey! Would you like to talk sales, support, or anyone?
-                </span>
+                        <div class="chat_avatar">
+                            <img src="images/chat-avatar.jpg" />
+                        </div>Hey! Would you like to talk sales, support, or anyone?
+                    </span>
                     <span class="chat_msg_item chat_msg_item_user">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
                     <span class="chat_msg_item chat_msg_item_admin">
-                    <div class="chat_avatar">
-                        <img src="{% static 'images/chat-avatar.jpg'%}" />
-                    </div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                    been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                    galley of type and scrambled it to make a type specimen book.
-                </span>
+                        <div class="chat_avatar">
+                            <img src="images/chat-avatar.jpg" />
+                        </div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                        galley of type and scrambled it to make a type specimen book.
+                    </span>
                     <span class="chat_msg_item chat_msg_item_user">
-                    Where can I get some?</span>
+                        Where can I get some?</span>
                     <span class="chat_msg_item chat_msg_item_admin">
-                    <div class="chat_avatar">
-                        <img src="{% static 'images/chat-avatar.jpg'%}" />
-                    </div>The standard chuck...
-                </span>
+                        <div class="chat_avatar">
+                            <img src="images/chat-avatar.jpg" />
+                        </div>The standard chuck...
+                    </span>
                     <span class="chat_msg_item chat_msg_item_user">
-                    There are many variations of passages of Lorem Ipsum available</span>
+                        There are many variations of passages of Lorem Ipsum available</span>
                     <div class="status2">Just now, Not seen yet</div>
                     <span class="chat_msg_item ">
-                    <ul class="tags">
-                        <li>Hats</li>
-                        <li>T-Shirts</li>
-                        <li>Pants</li>
-                    </ul>
-                </span>
+                        <ul class="tags">
+                            <li>Hats</li>
+                            <li>T-Shirts</li>
+                            <li>Pants</li>
+                        </ul>
+                    </span>
                 </div>
                 <div class="fab_field">
                     <a id="fab_camera" class="fab"><i class="fa fa-camera"></i></a>
@@ -2308,8 +2166,7 @@ End Chat-box-->
                         <div class="col-md-6 col-sm-12">
                             <h6 class="gray_text">Login the Quick Way</h6>
                             <a href="#" class="btn btn-block facebook-btn"><i class="fa fa-facebook-square"
-                                    aria-hidden="true"></i> Login with Facebook</a>
-                                    <a href="#" class="btn btn-block googleplus-btn"><i class="fa fa-google"
+                                    aria-hidden="true"></i> Login with Facebook</a>  <a href="#" class="btn btn-block googleplus-btn"><i class="fa fa-google"
                                     aria-hidden="true"></i> Login with Google</a>
                         </div>
                         <div class="mid_divider"></div>
@@ -2372,9 +2229,7 @@ End Chat-box-->
                         <div class="col-md-6 col-sm-12">
                             <h6 class="gray_text">Login the Quick Way</h6>
                             <a href="#" class="btn btn-block facebook-btn"><i class="fa fa-facebook-square"
-                                    aria-hidden="true"></i> Login with Facebook</a>
-
-                            <a href="#" class="btn btn-block googleplus-btn"><i class="fa fa-google"
+                                    aria-hidden="true"></i> Login with Facebook</a> <a href="#" class="btn btn-block googleplus-btn"><i class="fa fa-google"
                                     aria-hidden="true"></i> Login with Google</a>
                         </div>
                         <div class="mid_divider"></div>
@@ -2428,102 +2283,40 @@ End Chat-box-->
 jquery -->
 
     <!-- jquery  -->
-    <script type="text/javascript" src="{% static 'js/jquery-3.3.1.min.js'%}"></script>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 
     <!-- bootstrap -->
-    <script type="text/javascript" src="{% static 'js/popper.js'%}"></script>
-    <script type="text/javascript" src="{% static 'js/bootstrap.min.js'%}"></script>
+    <script type="text/javascript" src="js/popper.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
     <!-- owl-carousel -->
-    <script type="text/javascript" src="{% static 'js/owl-carousel/owl.carousel.min.js'%}"></script>
+    <script type="text/javascript" src="js/owl-carousel/owl.carousel.min.js"></script>
 
     <!-- slick -->
-    <script type="text/javascript" src="{% static 'js/slick.min.js'%}"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
 
     <!-- Swiper -->
-    <script type="text/javascript" src="{% static 'js/swiper.jquery.js'%}"></script>
-    <script type="text/javascript " src="{% static 'js/jquery.ripples-min.js '%}"></script>
+    <script type="text/javascript" src="js/swiper.jquery.js"></script>
+    <script type="text/javascript " src="js/jquery.ripples-min.js "></script>
 
 
     <!-- revolution -->
-    <script type="text/javascript" src="{% static 'revolution/js/jquery.themepunch.tools.min.js'%}"></script>
-    <script type="text/javascript" src="{% static 'revolution/js/jquery.themepunch.revolution.min.js'%}"></script>
+    <script type="text/javascript" src="revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.min.js"></script>
     <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
-    <script type="text/javascript" src="{% static 'revolution/js/extensions/revolution.extension.actions.min.js'%}"></script>
-    <script type="text/javascript" src="{% static 'revolution/js/extensions/revolution.extension.carousel.min.js'%}"></script>
-    <script type="text/javascript" src="{% static 'revolution/js/extensions/revolution.extension.kenburn.min.js'%}"></script>
-    <script type="text/javascript" src="{% static 'revolution/js/extensions/revolution.extension.layeranimation.min.js'%}"></script>
-    <script type="text/javascript" src="{% static 'revolution/js/extensions/revolution.extension.migration.min.js'%}"></script>
-    <script type="text/javascript" src="{% static 'revolution/js/extensions/revolution.extension.navigation.min.js'%}"></script>
-    <script type="text/javascript" src="{% static 'revolution/js/extensions/revolution.extension.parallax.min.js'%}"></script>
-    <script type="text/javascript" src="{% static 'revolution/js/extensions/revolution.extension.slideanims.min.js'%}"></script>
-    <script type="text/javascript" src="{% static 'revolution/js/extensions/revolution.extension.video.min.js'%}"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.migration.min.js"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.video.min.js"></script>
 
     <!-- custom -->
-    <script type="text/javascript" src="{% static 'js/custom.js'%}"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
 
-    <script type="text/javascript">
-        (function($) {
-            "use strict";
-
-            var tpj = jQuery;
-            var revapi2;
-            tpj(document).ready(function() {
-                if (tpj("#rev_slider_2_1").revolution == undefined) {
-                    revslider_showDoubleJqueryError("#rev_slider_2_1");
-                } else {
-                    revapi2 = tpj("#rev_slider_2_1").show().revolution({
-                        sliderType: "standard",
-                        sliderLayout: "fullwidth",
-                        dottedOverlay: "none",
-                        delay: 9000,
-                        navigation: {
-                            keyboardNavigation: "off",
-                            keyboard_direction: "horizontal",
-                            mouseScrollNavigation: "off",
-                            mouseScrollReverse: "default",
-                            onHoverStop: "off",
-                            bullets: {
-                                enable: true,
-                                hide_onmobile: false,
-                                style: "hermes",
-                                hide_onleave: false,
-                                direction: "vertical",
-                                h_align: "right",
-                                v_align: "center",
-                                h_offset: 30,
-                                v_offset: 50,
-                                space: 10,
-                                tmp: ''
-                            }
-                        },
-                        visibilityLevels: [1240, 1024, 778, 480],
-                        gridwidth: 1570,
-                        gridheight: 1000,
-                        lazyType: "none",
-                        shadow: 0,
-                        spinner: "spinner3",
-                        stopLoop: "off",
-                        stopAfterLoops: -1,
-                        stopAtSlide: -1,
-                        shuffle: "off",
-                        autoHeight: "off",
-                        disableProgressBar: "on",
-                        hideThumbsOnMobile: "off",
-                        hideSliderAtLimit: 0,
-                        hideCaptionAtLimit: 0,
-                        hideAllCaptionAtLilmit: 0,
-                        debugMode: false,
-                        fallbacks: {
-                            simplifyAll: "off",
-                            nextSlideOnWindowFocus: "off",
-                            disableFocusListener: false,
-                        }
-                    });
-                }
-            });
-        })(jQuery);
-    </script>
 
 </body>
 
