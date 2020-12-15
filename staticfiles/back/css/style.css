@@ -5,7 +5,12 @@
 
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap");
 
-
+/**********
+ ** Uses
+@include themify($themes) {
+    propnname: themed('variable');
+}
+**/
 
 * {
     margin: 0;

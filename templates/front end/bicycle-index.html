@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -47,7 +48,7 @@ loading -->
 
     <div id="loading">
         <div id="loading-center">
-            <img src="images/bicycle/Cycle.gif" alt="" class="bike-carkhana">
+            <img src="{% static 'front/images/bicycle/Cycle.gif' %}" alt="" class="bike-carkhana">
         </div>
     </div>
 
@@ -126,7 +127,7 @@ header -->
             </div> -->
                             <div class="sms-seller-dropdown">
                                 <a href="#" class="sms-dropdown">
-                                    <img class="img-circle resize" alt="" src="images/user3.jpg"> Showrov <i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+                                    <img class="img-circle resize" alt="" src="{% static 'front/images/user3.jpg' %}"> Showrov <i class="fa fa-sort-desc" aria-hidden="true"></i></a>
                                 <ul>
                                     <li><a href="#">My Profile</a></li>
                                     <li><a href="#">Log Out</a></li>
@@ -152,7 +153,7 @@ header -->
 
                                     <ul class="shopping-cart-items">
                                         <li class="clearfix">
-                                            <img src="images/bike/cart-img.webp" alt="item1" />
+                                            <img src="{% static 'images/bike/cart-img.webp' %}" alt="item1" />
                                             <span class="item-name">XMREDTREE</span>
                                             <span class="item-detail">Pack 100</span>
                                             <span class="item-price">$49.50</span>
@@ -161,7 +162,7 @@ header -->
                                         </li>
 
                                         <li class="clearfix">
-                                            <img src="images/bike/cart-img.webp" alt="item1" />
+                                            <img src={% static 'images/bike/cart-img.webp' %}" alt="item1" />
                                             <span class="item-name">XMWHREIN</span>
                                             <span class="item-detail">Pack 100</span>
                                             <span class="item-price">$34.06</span>
@@ -170,7 +171,7 @@ header -->
                                         </li>
 
                                         <li class="clearfix">
-                                            <img src="images/bike/cart-img.webp" alt="item1" />
+                                            <img src={% static 'images/bike/cart-img.webp' %}" alt="item1" />
                                             <span class="item-name">XMJBRR</span>
                                             <span class="item-detail">Pack 25</span>
                                             <span class="item-price">$14.21</span>
@@ -207,7 +208,7 @@ header -->
             <div class="container">
                 <div id='main-menu' class='main-menu'>
                     <div class="logo">
-                        <a href="index.html"><img src="images/logo.png" alt="image" /></a>
+                        <a href="index.html"><img src="{% static 'front/images/logo.png' %}" alt="image" /></a>
                     </div>
                     <div class='container-menu'>
                         <nav class='navigation'>

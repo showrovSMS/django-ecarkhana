@@ -594,7 +594,7 @@ section.slider {
   -webkit-transition: background 0.3s ease;
   transition: background 0.3s ease;
   position: absolute; }
-  .hermes .tp-bullet::hover {
+  .hermes .tp-bullet:hover {
     background-color: rgba(0, 0, 0, 0.21); }
   .hermes .tp-bullet::after {
     content: ' ';
