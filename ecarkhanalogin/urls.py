@@ -24,7 +24,7 @@ from django.conf.urls.static import static
 from ecarkhanalogin import settings
 
 urlpatterns = [
-    path('admin/admin', admin.site.urls),
+    path('admin/', admin.site.urls),
     path('', include('djangologin.urls')),
     path('car-page/', include('car.urls')),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
