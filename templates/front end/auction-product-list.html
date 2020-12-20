@@ -48,7 +48,7 @@
 
     <div id="loading">
         <div id="loading-center">
-            <img src="images/loader.gif" alt="">
+            <img src="{% static 'front/images/loader.gif' %}" alt="">
         </div>
     </div>
 
@@ -129,7 +129,7 @@ header -->
         </div> -->
                             <div class="sms-seller-dropdown">
                                 <a href="#" class="sms-dropdown">
-                                    <img class="img-circle resize" alt="" src="images/user3.jpg"> Showrov <i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+                                    <img class="img-circle resize" alt="" src="{% static 'front/images/user3.jpg' %}"> Showrov <i class="fa fa-sort-desc" aria-hidden="true"></i></a>
                                 <ul>
                                     <li><a href="seller-profile.html">Seller Profile</a></li>
                                     <li><a href="seller-my-ad.html">Active Ads</a></li>
@@ -161,48 +161,48 @@ header -->
             <div class="container">
                 <div id='main-menu' class='main-menu'>
                     <div class="logo">
-                        <a href="index.html"><img src="images/logo.png" alt="image" /></a>
+                        <a href="{% url 'home' %}"><img src="{% static 'front/images/logo.png' %}" alt="image" /></a>
                     </div>
                     <div class='container-menu'>
                         <nav class='navigation'>
                             <ul class='core-menu'>
-                                <li class="current sms-focus"><a href='index.html'><i class="fa fa-car"></i>Car</a></li>
-                                <li class="sms-focus"><a href='bike-index.html'><i class="fa fa-motorcycle"></i>Bike</a></li>
-                                <li class="sms-focus"><a href='bicycle-index.html'><i class="fa fa-bicycle"></i>Bicycle</a></li>
+                                <li class="current sms-focus"><a href='{% url 'home' %}'><i class="fa fa-car"></i>Car</a></li>
+                                <li class="sms-focus"><a href='{% url 'bike' %}'><i class="fa fa-motorcycle"></i>Bike</a></li>
+                                <li class="sms-focus"><a href='{% url 'bicycle' %}'><i class="fa fa-bicycle"></i>Bicycle</a></li>
                                 <li class="slide"></li>
                             </ul>
 
                             <div class="menu-wrapper text-center">
                                 <button class="sms-menu-toggle">
-                                <div class="one"></div>
-                                <div class="two"></div>
-                                <div class="three"></div>
-                            </button>
+                                    <div class="one"></div>
+                                    <div class="two"></div>
+                                    <div class="three"></div>
+                                </button>
                                 <div class="sms-main-menu">
                                     <nav>
                                         <ul>
-                                            <li class="mobile-menu"><a href='index.html'>Car</a></li>
+                                            <li class="mobile-menu"><a href='{% url 'home' %}'>Car</a></li>
                                             <li class="mobile-menu"><a href='bike-index.html'>Bike</a> </li>
                                             <li class="mobile-menu"><a href='bicycle-index.html'>Bicycle</a>
                                             </li>
-                                            <li><a href='dealer-list.html' class="current-hover">EShowroom</a>
+                                            <li><a href='{% url 'dealer-list' %}' class="current-hover">EShowroom</a>
                                             </li>
-                                            <li><a href="national-distributor-list.html">National Distributor </a>
+                                            <li><a href="{% url 'national-distributor-list' %}">National Distributor </a>
                                             </li>
                                             <li class="carkhana-drop"><a href="#">Loan Info <i
-                                                    class="fa fa-angle-double-down"></i></a>
+                                                        class="fa fa-angle-double-down"></i></a>
                                                 <ul class='dropdown'>
-                                                    <li><a href="car-loan.html">Car Loan </a></li>
-                                                    <li><a href="car-loan-eligibility.html">Loan Eligibility</a></li>
-                                                    <li><a href='car-insurance.html'>Insurance</a></li>
+                                                    <li><a href="{% url 'car-loan' %}">Apply Loan </a></li>
+                                                    <li><a href="{% url 'car-loan-eligibility' %}">Loan Eligibility</a></li>
+                                                    <li><a href='{% url 'car-loan-insurance' %}'>Insurance</a></li>
                                                 </ul>
                                             </li>
                                             <li><a href="car-listing.html">Buy Cars</a>
                                             </li>
-                                            <li><a href="sell-product-list.html">Sell Cars</a> </li>
-                                            <li><a href="compare-car.html">Comparison</a> </li>
-                                            <li><a href="auction-product-list.html">Auction</a> </li>
-                                            <li><a href="group-buying-list.html">Group Buying</a> </li>
+                                            <li><a href="{% url 'sell-list' %}">Sell Cars</a> </li>
+                                            <li><a href="{% url 'car-compare' %}">Comparison</a> </li>
+                                            <li><a href="{% url 'auction-product' %}">Auction</a> </li>
+                                            <li><a href="{% url 'group-list' %}">Group Buying</a> </li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -221,7 +221,7 @@ header -->
     <!--=================================
  inner-intro -->
 
-    <section class="inner-intro bg-1 bg-overlay-black-70" style="background: url(images/sms-bg.jpg);">
+    <section class="inner-intro bg-1 bg-overlay-black-70" style="background: url({% static 'front/images/sms-bg.jpg' %});">
         <div class="container">
             <div class="row text-center intro-title">
                 <div class="col-md-6 text-md-left d-inline-block">
@@ -733,7 +733,7 @@ Auction product-listing  -->
                         <div class="col-lg-4">
                             <div class="car-item gray-bg text-center">
                                 <div class="car-image">
-                                    <img class="img-fluid" src="images/sp1.jpg" alt="">
+                                    <img class="img-fluid" src="{% static 'front/images/sp1.jpg' %}" alt="">
                                     <div class="car-overlay-banner">
 
                                     </div>
@@ -746,13 +746,13 @@ Auction product-listing  -->
                                     </ul>
                                 </div>
                                 <div class="car-content">
-                                    <a href="single-sell-product.html">Acura Rsx</a>
+                                    <a href="{% url 'single-sell' %}">Acura Rsx</a>
                                     <div class="separator"></div>
                                     <div class="price">
                                         <span class="new-price">$32,698 </span>
                                     </div>
                                     <div class="auction-btn">
-                                        <a href="single-sell-product.html" class="red">Visit the Auction</a>
+                                        <a href="{% url 'single-sell' %}" class="red">Visit the Auction</a>
                                     </div>
                                 </div>
                             </div>
@@ -760,7 +760,7 @@ Auction product-listing  -->
                         <div class="col-lg-4">
                             <div class="car-item gray-bg text-center">
                                 <div class="car-image">
-                                    <img class="img-fluid" src="images/sp2.jpg" alt="">
+                                    <img class="img-fluid" src="{% static 'front/images/sp2.jpg' %}" alt="">
                                     <div class="car-overlay-banner">
 
                                     </div>
@@ -773,13 +773,13 @@ Auction product-listing  -->
                                     </ul>
                                 </div>
                                 <div class="car-content">
-                                    <a href="single-sell-product.html">Lexus GS 450h</a>
+                                    <a href="{% url 'single-sell' %}">Lexus GS 450h</a>
                                     <div class="separator"></div>
                                     <div class="price">
                                         <span class="new-price">$32,698 </span>
                                     </div>
                                     <div class="auction-btn">
-                                        <a href="single-sell-product.html" class="red">Visit the Auction</a>
+                                        <a href="{% url 'single-sell' %}" class="red">Visit the Auction</a>
                                     </div>
                                 </div>
                             </div>
@@ -787,7 +787,7 @@ Auction product-listing  -->
                         <div class="col-lg-4">
                             <div class="car-item gray-bg text-center">
                                 <div class="car-image">
-                                    <img class="img-fluid" src="images/sp3.jpg" alt="">
+                                    <img class="img-fluid" src="{% static 'front/images/sp3.jpg' %}" alt="">
                                     <div class="car-overlay-banner">
 
                                     </div>
@@ -800,13 +800,13 @@ Auction product-listing  -->
                                     </ul>
                                 </div>
                                 <div class="car-content">
-                                    <a href="single-sell-product.html">GTA 5 Lowriders DLC</a>
+                                    <a href="{% url 'single-sell' %}">GTA 5 Lowriders DLC</a>
                                     <div class="separator"></div>
                                     <div class="price">
                                         <span class="new-price">$32,698 </span>
                                     </div>
                                     <div class="auction-btn">
-                                        <a href="single-sell-product.html" class="red">Visit the Auction</a>
+                                        <a href="{% url 'single-sell' %}" class="red">Visit the Auction</a>
                                     </div>
                                 </div>
                             </div>
@@ -814,7 +814,7 @@ Auction product-listing  -->
                         <div class="col-lg-4">
                             <div class="car-item gray-bg text-center">
                                 <div class="car-image">
-                                    <img class="img-fluid" src="images/Bike-image-01.png" alt="">
+                                    <img class="img-fluid" src="{% static 'front/images/sp4.jpg' %}" alt="">
                                     <div class="car-overlay-banner">
 
                                     </div>
@@ -827,13 +827,13 @@ Auction product-listing  -->
                                     </ul>
                                 </div>
                                 <div class="car-content">
-                                    <a href="single-sell-product.html">Toyota avalon hybrid </a>
+                                    <a href="{% url 'single-sell' %}">Toyota avalon hybrid </a>
                                     <div class="separator"></div>
                                     <div class="price">
                                         <span class="new-price">$32,698 </span>
                                     </div>
                                     <div class="auction-btn">
-                                        <a href="single-sell-product.html" class="red">Visit the Auction</a>
+                                        <a href="{% url 'single-sell' %}" class="red">Visit the Auction</a>
                                     </div>
                                 </div>
                             </div>
@@ -841,7 +841,7 @@ Auction product-listing  -->
                         <div class="col-lg-4">
                             <div class="car-item gray-bg text-center">
                                 <div class="car-image">
-                                    <img class="img-fluid" src="images/Bike-image-02.png" alt="">
+                                    <img class="img-fluid" src="{% static 'front/images/Bike-image-02.png' %}" alt="">
                                     <div class="car-overlay-banner">
 
                                     </div>
@@ -854,13 +854,13 @@ Auction product-listing  -->
                                     </ul>
                                 </div>
                                 <div class="car-content">
-                                    <a href="single-sell-product.html">Hyundai santa fe sport </a>
+                                    <a href="{% url 'single-sell' %}">Hyundai santa fe sport </a>
                                     <div class="separator"></div>
                                     <div class="price">
                                         <span class="new-price">$32,698 </span>
                                     </div>
                                     <div class="auction-btn">
-                                        <a href="single-sell-product.html" class="red">Visit the Auction</a>
+                                        <a href="{% url 'single-sell' %}" class="red">Visit the Auction</a>
                                     </div>
                                 </div>
                             </div>
@@ -868,7 +868,7 @@ Auction product-listing  -->
                         <div class="col-lg-4">
                             <div class="car-item gray-bg text-center">
                                 <div class="car-image">
-                                    <img class="img-fluid" src="images/Bike-image-03.png" alt="">
+                                    <img class="img-fluid" src="{% static 'front/images/Bike-image-03.png' %}" alt="">
                                     <div class="car-overlay-banner">
 
                                     </div>
@@ -881,13 +881,13 @@ Auction product-listing  -->
                                     </ul>
                                 </div>
                                 <div class="car-content">
-                                    <a href="single-sell-product.html">Lexus is f</a>
+                                    <a href="{% url 'single-sell' %}">Lexus is f</a>
                                     <div class="separator"></div>
                                     <div class="price">
                                         <span class="new-price">$32,698 </span>
                                     </div>
                                     <div class="auction-btn">
-                                        <a href="single-sell-product.html" class="red">Visit the Auction</a>
+                                        <a href="{% url 'single-sell' %}" class="red">Visit the Auction</a>
                                     </div>
                                 </div>
                             </div>
@@ -895,7 +895,7 @@ Auction product-listing  -->
                         <div class="col-lg-4">
                             <div class="car-item gray-bg text-center">
                                 <div class="car-image">
-                                    <img class="img-fluid" src="images/Cycle-01.png" alt="">
+                                    <img class="img-fluid" src="{% static 'front/images/Cycle-01.png' %}" alt="">
                                     <div class="car-overlay-banner">
 
                                     </div>
@@ -908,13 +908,13 @@ Auction product-listing  -->
                                     </ul>
                                 </div>
                                 <div class="car-content">
-                                    <a href="single-sell-product.html">Acura Rsx</a>
+                                    <a href="{% url 'single-sell' %}">Acura Rsx</a>
                                     <div class="separator"></div>
                                     <div class="price">
                                         <span class="new-price">$32,698 </span>
                                     </div>
                                     <div class="auction-btn">
-                                        <a href="single-sell-product.html" class="red">Visit the Auction</a>
+                                        <a href="{% url 'single-sell' %}" class="red">Visit the Auction</a>
                                     </div>
                                 </div>
                             </div>
@@ -922,7 +922,7 @@ Auction product-listing  -->
                         <div class="col-lg-4">
                             <div class="car-item gray-bg text-center">
                                 <div class="car-image">
-                                    <img class="img-fluid" src="images/Cycle-02.png" alt="">
+                                    <img class="img-fluid" src="{% static 'front/images/Cycle-02.png' %}" alt="">
                                     <div class="car-overlay-banner">
 
                                     </div>
@@ -935,13 +935,13 @@ Auction product-listing  -->
                                     </ul>
                                 </div>
                                 <div class="car-content">
-                                    <a href="single-sell-product.html">GTA 5 Lowriders DLC</a>
+                                    <a href="{% url 'single-sell' %}">GTA 5 Lowriders DLC</a>
                                     <div class="separator"></div>
                                     <div class="price">
                                         <span class="new-price">$32,698 </span>
                                     </div>
                                     <div class="auction-btn">
-                                        <a href="single-sell-product.html" class="red">Visit the Auction</a>
+                                        <a href="{% url 'single-sell' %}" class="red">Visit the Auction</a>
                                     </div>
                                 </div>
                             </div>
@@ -949,7 +949,7 @@ Auction product-listing  -->
                         <div class="col-lg-4">
                             <div class="car-item gray-bg text-center">
                                 <div class="car-image">
-                                    <img class="img-fluid" src="images/Cycle 03.png" alt="">
+                                    <img class="img-fluid" src="{% static 'front/images/Cycle-03.png' %}" alt="">
                                     <div class="car-overlay-banner">
 
                                     </div>
@@ -962,13 +962,13 @@ Auction product-listing  -->
                                     </ul>
                                 </div>
                                 <div class="car-content">
-                                    <a href="single-sell-product.html"> Lexus GS 450h</a>
+                                    <a href="{% url 'single-sell' %}"> Lexus GS 450h</a>
                                     <div class="separator"></div>
                                     <div class="price">
                                         <span class="new-price">$32,698 </span>
                                     </div>
                                     <div class="auction-btn">
-                                        <a href="single-sell-product.html" class="red">Visit the Auction</a>
+                                        <a href="{% url 'single-sell' %}" class="red">Visit the Auction</a>
                                     </div>
                                 </div>
                             </div>
@@ -1017,7 +1017,7 @@ footer -->
             <div class="row">
                 <div class="col-lg-4 col-md-12">
                     <div class="about-content">
-                        <img class="img-fluid" id="logo-footer" src="images/logo.png" alt="">
+                        <img class="img-fluid" id="logo-footer" src="{% static 'front/images/logo.png' %}" alt="">
                         <p>We provide everything you need to build an amazing dealership website developed especially for car sellers dealers or auto motor retailers.</p>
                     </div>
                     <div class="address">
@@ -1046,7 +1046,7 @@ footer -->
                         <h6 class="text-white">recent posts </h6>
                         <div class="recent-post">
                             <div class="recent-post-image">
-                                <img class="img-fluid" src="images/car01.jpg" alt="">
+                                <img class="img-fluid" src="{% static 'front/images/car01.jpg' %}" alt="">
                             </div>
                             <div class="recent-post-info">
                                 <a href="#">Time to change your </a>
@@ -1055,7 +1055,7 @@ footer -->
                         </div>
                         <div class="recent-post">
                             <div class="recent-post-image">
-                                <img class="img-fluid" src="images/car02.jpg" alt="">
+                                <img class="img-fluid" src="{% static 'front/images/car02.jpg' %}" alt="">
                             </div>
                             <div class="recent-post-info">
                                 <a href="#">The best time to </a>
@@ -1064,7 +1064,7 @@ footer -->
                         </div>
                         <div class="recent-post">
                             <div class="recent-post-image">
-                                <img class="img-fluid" src="images/car03.jpg" alt="">
+                                <img class="img-fluid" src="{% static 'front/images/car03.jpg' %}" alt="">
                             </div>
                             <div class="recent-post-info">
                                 <a href="#">Replacing a timing </a>
@@ -1112,7 +1112,7 @@ footer -->
 back to top -->
 
     <div class="car-top">
-        <span><img src="images/car.png" alt=""></span>
+        <span><img src="{% static 'front/images/car.png' %}" alt=""></span>
     </div>
 
     <!--=================================

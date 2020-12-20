@@ -1,11 +1,45 @@
 from django.conf.urls import url
 from django.urls import path
 
-from djangologin.views import abc, abc2, abc3
+from djangologin.views import *
 
 urlpatterns = [
     path('home/', abc, name="home"),
     path('bike/', abc2, name="bike"),
     path('bicycle/', abc3, name="bicycle"),
+    path('auction-bidd/', abc4, name="auction-bidd"),
+    path('auction-product/', abc5, name="auction-product"),
+    path('bicycle-compare/', abc6, name="bicycle-compare"),
+    path('bike-cart/', abc7, name="bike-cart"),
+    path('bike-checkout/', abc8, name="bike-checkout"),
+    path('bike-compare/', abc9, name="bike-compare"),
+    path('bike-fit/', abc10, name="bike-fit"),
+    path('bike-listing/', abc11, name="bike-listing"),
+    path('bike-wishlist/', abc12, name="bike-wishlist"),
+    path('car-add-post/', abc13, name="car-add-post"),
+    path('car-insurance/', abc14, name="car-insurance"),
+    path('car-listing/', abc15, name="car-listing"),
+    path('car-loan/', abc16, name="car-loan"),
+    path('car-loan-eligibility/', abc17, name="car-loan-eligibility"),
+    path('car-loan-insurance/', abc18, name="car-loan-insurance"),
+    path('car-compare/', abc19, name="car-compare"),
+    path('contact/', abc20, name="contact"),
+    path('dealer-details/', abc21, name="dealer-details"),
+    path('dealer-list/', abc22, name="dealer-list"),
+    path('group-list/', abc23, name="group-list"),
+    path('national-distributor-details/', abc24, name="national-distributor-details"),
+    path('national-distributor-list/', abc25, name="national-distributor-list"),
+    path('privacy/', abc26, name="privacy"),
+    path('search/', abc27, name="search"),
+    path('sell-list/', abc28, name="sell-list"),
+    path('seller-message/', abc29, name="seller-message"),
+    path('seller-my-ad/', abc30, name="seller-my-ad"),
+    path('seller-profile/', abc31, name="seller-profile"),
+    path('single-accesories/', abc32, name="single-accesories"),
+    path('single-bike/', abc33, name="single-bike"),
+    path('single-blog/', abc34, name="single-blog"),
+    path('single-car/', abc35, name="single-car"),
+    path('single-sell/', abc36, name="single-sell"),
+    path('terms/', abc37, name="terms"),
 
 ]

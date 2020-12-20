@@ -48,7 +48,7 @@ loading -->
 
     <div id="loading">
         <div id="loading-center">
-            <img src="images/bike/bike.gif" alt="" class="bike-carkhana">
+            <img src="{% static 'front/images/bike/bike.gif' %}" alt="" class="bike-carkhana">
         </div>
     </div>
 
@@ -127,7 +127,7 @@ header -->
             </div> -->
                             <div class="sms-seller-dropdown">
                                 <a href="#" class="sms-dropdown">
-                                    <img class="img-circle resize" alt="" src="images/user3.jpg"> Showrov <i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+                                    <img class="img-circle resize" alt="" src="{% static 'front/images/user3.jpg' %}"> Showrov <i class="fa fa-sort-desc" aria-hidden="true"></i></a>
                                 <ul>
                                     <li><a href="seller-profile.html">My Profile</a></li>
                                     <li><a href="#">Log Out</a></li>
@@ -153,7 +153,7 @@ header -->
 
                                     <ul class="shopping-cart-items">
                                         <li class="clearfix">
-                                            <img src="images/bike/cart-img.webp" alt="item1" />
+                                            <img src="{% static 'front/images/bike/cart-img.webp' %}" alt="item1" />
                                             <span class="item-name">XMREDTREE</span>
                                             <span class="item-detail">Pack 100</span>
                                             <span class="item-price">$49.50</span>
@@ -162,7 +162,7 @@ header -->
                                         </li>
 
                                         <li class="clearfix">
-                                            <img src="images/bike/cart-img.webp" alt="item1" />
+                                            <img src="{% static 'front/images/bike/cart-img.webp' %}" alt="item1" />
                                             <span class="item-name">XMWHREIN</span>
                                             <span class="item-detail">Pack 100</span>
                                             <span class="item-price">$34.06</span>
@@ -171,7 +171,7 @@ header -->
                                         </li>
 
                                         <li class="clearfix">
-                                            <img src="images/bike/cart-img.webp" alt="item1" />
+                                            <img src="{% static 'front/images/bike/cart-img.webp' %}" alt="item1" />
                                             <span class="item-name">XMJBRR</span>
                                             <span class="item-detail">Pack 25</span>
                                             <span class="item-price">$14.21</span>
@@ -208,14 +208,14 @@ header -->
             <div class="container">
                 <div id='main-menu' class='main-menu'>
                     <div class="logo">
-                        <a href="index.html"><img src="images/logo.png" alt="image" /></a>
+                        <a href="{% url 'home' %}"><img src="{% static 'front/images/logo.png' %}" alt="image" /></a>
                     </div>
                     <div class='container-menu'>
                         <nav class='navigation'>
                             <ul class='core-menu'>
-                                <li class=" sms-focus"><a href='index.html'><i class="fa fa-car"></i>Car</a></li>
-                                <li class="current sms-focus"><a href='bike-index.html'><i class="fa fa-motorcycle"></i>Bike</a></li>
-                                <li class="sms-focus"><a href='bicycle-index.html'><i class="fa fa-bicycle"></i>Bicycle</a></li>
+                                <li class="current sms-focus"><a href='{% url 'home' %}'><i class="fa fa-car"></i>Car</a></li>
+                                <li class="sms-focus"><a href='{% url 'bike' %}'><i class="fa fa-motorcycle"></i>Bike</a></li>
+                                <li class="sms-focus"><a href='{% url 'bicycle' %}'><i class="fa fa-bicycle"></i>Bicycle</a></li>
                                 <li class="slide"></li>
                             </ul>
 
@@ -228,26 +228,28 @@ header -->
                                 <div class="sms-main-menu">
                                     <nav>
                                         <ul>
-                                            <li class="mobile-menu"><a href='index.html'>Car</a></li>
+                                            <li class="mobile-menu"><a href='{% url 'home' %}'>Car</a></li>
                                             <li class="mobile-menu"><a href='bike-index.html'>Bike</a> </li>
                                             <li class="mobile-menu"><a href='bicycle-index.html'>Bicycle</a>
                                             </li>
-                                            <li><a href="national-distributor-list.html">National Distributor </a>
+                                            <li><a href='{% url 'dealer-list' %}' class="current-hover">EShowroom</a>
+                                            </li>
+                                            <li><a href="{% url 'national-distributor-list' %}">National Distributor </a>
                                             </li>
                                             <li class="carkhana-drop"><a href="#">Loan Info <i
                                                         class="fa fa-angle-double-down"></i></a>
                                                 <ul class='dropdown'>
-                                                    <li><a href="car-loan.html">Apply Loan </a></li>
-                                                    <li><a href="car-loan-eligibility.html">Loan Eligibility</a></li>
-                                                    <li><a href='car-insurance.html'>Insurance</a></li>
+                                                    <li><a href="{% url 'car-loan' %}">Apply Loan </a></li>
+                                                    <li><a href="{% url 'car-loan-eligibility' %}">Loan Eligibility</a></li>
+                                                    <li><a href='{% url 'car-loan-insurance' %}'>Insurance</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="bike-listing.html">Buy Bike</a>
+                                            <li><a href="car-listing.html">Buy Cars</a>
                                             </li>
-                                            <li><a href="sell-product-list.html">Sell Bike</a> </li>
-                                            <li><a href="bike-compare.html">Comparison</a> </li>
-                                            <li><a href="auction-product-list.html">Auction</a> </li>
-                                            <li><a href="group-buying-list.html">Group Buying</a> </li>
+                                            <li><a href="{% url 'sell-list' %}">Sell Cars</a> </li>
+                                            <li><a href="{% url 'car-compare' %}">Comparison</a> </li>
+                                            <li><a href="{% url 'auction-product' %}">Auction</a> </li>
+                                            <li><a href="{% url 'group-list' %}">Group Buying</a> </li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -272,28 +274,28 @@ bike slider -->
             <div class="item">
                 <div class="car-item text-center">
                     <div class="car-image">
-                        <img class="img-fluid" src="images/bike/1slide.jpg" alt="">
+                        <img class="img-fluid" src="{% static 'front/images/bike/1slide.jpg' %}" alt="">
                     </div>
                 </div>
             </div>
             <div class="item">
                 <div class="car-item text-center">
                     <div class="car-image">
-                        <img class="img-fluid" src="images/bike/2slide.jpg" alt="">
+                        <img class="img-fluid" src="{% static 'front/images/bike/2slide.jpg' %}" alt="">
                     </div>
                 </div>
             </div>
             <div class="item">
                 <div class="car-item text-center">
                     <div class="car-image">
-                        <img class="img-fluid" src="images/bike/3slide.jpg" alt="">
+                        <img class="img-fluid" src="{% static 'front/images/bike/3slide.jpg' %}" alt="">
                     </div>
                 </div>
             </div>
             <div class="item">
                 <div class="car-item text-center">
                     <div class="car-image">
-                        <img class="img-fluid" src="images/bike/4slide.jpg" alt="">
+                        <img class="img-fluid" src="{% static 'front/images/bike/4slide.jpg' %}" alt="">
                     </div>
                 </div>
             </div>
@@ -798,7 +800,7 @@ Start Used Cars In Your City And Budget -->
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="img_holder float-left">
-                                            <img src="images/bike/Bike-image-01.png" alt="" class="img-fluid">
+                                            <img src="{% static 'front/images/bike/Bike-image-01.png' %}" alt="" class="img-fluid">
                                             <div class="hover_icon">
                                                 <a href="single-blog.html" class="hvr_btn"><i
                                                         class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
@@ -822,7 +824,7 @@ Start Used Cars In Your City And Budget -->
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="img_holder float-left">
-                                            <img src="images/bike/Bike-image-02.png" alt="" class="img-fluid">
+                                            <img src="{% static 'front/images/bike/Bike-image-02.png' %}" alt="" class="img-fluid">
                                             <div class="hover_icon">
                                                 <a href="single-blog.html" class="hvr_btn"><i
                                                         class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
@@ -860,7 +862,7 @@ Start Used Cars In Your City And Budget -->
                         <div class="item">
                             <div class="car-item text-center">
                                 <div class="car-image">
-                                    <img class="img-fluid" src="images/bike/Bike-image-01.png" alt="">
+                                    <img class="img-fluid" src="{% static 'front/images/bike/Bike-image-01.png' %}" alt="">
                                     <div class="car-overlay-banner">
                                         <ul>
                                             <li>
@@ -902,7 +904,7 @@ Start Used Cars In Your City And Budget -->
                         <div class="item">
                             <div class="car-item text-center">
                                 <div class="car-image">
-                                    <img class="img-fluid" src="images/bike/Bike-image-02.png" alt="">
+                                    <img class="img-fluid" src="{% static 'front/images/bike/Bike-image-02.png' %}" alt="">
                                     <div class="car-overlay-banner">
                                         <ul>
                                             <li>
@@ -944,7 +946,7 @@ Start Used Cars In Your City And Budget -->
                         <div class="item">
                             <div class="car-item text-center">
                                 <div class="car-image">
-                                    <img class="img-fluid" src="images/bike/Bike-image-03.png" alt="">
+                                    <img class="img-fluid" src="{% static 'front/images/bike/Bike-image-03.png' %}" alt="">
                                     <div class="car-overlay-banner">
                                         <ul>
                                             <li>
@@ -986,7 +988,7 @@ Start Used Cars In Your City And Budget -->
                         <div class="item">
                             <div class="car-item text-center">
                                 <div class="car-image">
-                                    <img class="img-fluid" src="images/bike/Bike-image-01.png" alt="">
+                                    <img class="img-fluid" src="{% static 'front/images/bike/Bike-image-01.png' %}" alt="">
                                     <div class="car-overlay-banner">
                                         <ul>
                                             <li>
@@ -1028,7 +1030,7 @@ Start Used Cars In Your City And Budget -->
                         <div class="item">
                             <div class="car-item text-center">
                                 <div class="car-image">
-                                    <img class="img-fluid" src="images/bike/Bike-image-02.png" alt="">
+                                    <img class="img-fluid" src="{% static 'front/images/bike/Bike-image-02.png' %}" alt="">
                                     <div class="car-overlay-banner">
                                         <ul>
                                             <li>
@@ -1093,7 +1095,7 @@ Start Compare -->
                 <div class="swiper-slide swiper-slide-prev" style="width: 1149px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
                     <div class="tg-compare tg-compare-left">
                         <figure class="tg-leftimginout">
-                            <img src="images/bike/compare-bike2.png" alt="image description">
+                            <img src="{% static 'front/images/bike/compare-bike2.png' %}" alt="image description">
                         </figure>
                         <div class="tg-carfeatures">
                             <span class="tg-icon icon-krop-big-logo">SmS</span>
@@ -1122,14 +1124,14 @@ Start Compare -->
                             </div>
                         </div>
                         <figure class="tg-rightimginout">
-                            <img src="images/bike/compare-bike1.png" alt="image description">
+                            <img src="{% static 'front/images/bike/compare-bike1.png' %}" alt="image description">
                         </figure>
                     </div>
                 </div>
                 <div class="swiper-slide swiper-slide-active" style="width: 1149px; opacity: 1; transform: translate3d(-1149px, 0px, 0px); transition-duration: 0ms;">
                     <div class="tg-compare tg-compare-left">
                         <figure>
-                            <img src="images/bike/compare-bike2.png" alt="image description">
+                            <img src="{% static 'front/images/bike/compare-bike2.png' %}" alt="image description">
                         </figure>
                         <div class="tg-carfeatures">
                             <span class="tg-icon icon-krop-big-logo">SmS</span>
@@ -1158,14 +1160,14 @@ Start Compare -->
                             </div>
                         </div>
                         <figure>
-                            <img src="images/bike/compare-bike1.png" alt="image description">
+                            <img src="{% static 'front/images/bike/compare-bike1.png' %}" alt="image description">
                         </figure>
                     </div>
                 </div>
                 <div class="swiper-slide swiper-slide-next" style="width: 1149px; opacity: 0; transform: translate3d(-2298px, 0px, 0px); transition-duration: 0ms;">
                     <div class="tg-compare tg-compare-left">
                         <figure>
-                            <img src="images/bike/compare-bike2.png" alt="image description">
+                            <img src="{% static 'front/images/bike/compare-bike2.png' %}" alt="image description">
                         </figure>
                         <div class="tg-carfeatures">
                             <span class="tg-icon icon-krop-big-logo">SmS</span>
@@ -1194,14 +1196,14 @@ Start Compare -->
                             </div>
                         </div>
                         <figure>
-                            <img src="images/bike/compare-bike1.png" alt="image description">
+                            <img src="{% static 'front/images/bike/compare-bike1.png' %}" alt="image description">
                         </figure>
                     </div>
                 </div>
                 <div class="swiper-slide" style="width: 1149px; opacity: 0; transform: translate3d(-3447px, 0px, 0px); transition-duration: 0ms;">
                     <div class="tg-compare tg-compare-left">
                         <figure>
-                            <img src="images/bike/compare-bike2.png" alt="image description">
+                            <img src="{% static 'front/images/bike/compare-bike2.png' %}" alt="image description">
                         </figure>
                         <div class="tg-carfeatures">
                             <span class="tg-icon icon-krop-big-logo">SmS</span>
@@ -1230,7 +1232,7 @@ Start Compare -->
                             </div>
                         </div>
                         <figure>
-                            <img src="images/bike/compare-bike1.png" alt="image description">
+                            <img src="{% static 'front/images/bike/compare-bike1.png' %}" alt="image description">
                         </figure>
                     </div>
                 </div>
@@ -1265,7 +1267,7 @@ start Featured Cars -->
                         <div class="item">
                             <div class="featured-car-list">
                                 <div class="featured-car-img">
-                                    <a href=""><img src="images/bike/upcoming-bikes.jpg" class="img-responsive" alt="Image"></a>
+                                    <a href=""><img src="{% static 'front/images/bike/upcoming-bikes.jpg' %}" class="img-responsive" alt="Image"></a>
                                     <div class="label_icon">New</div>
                                     <div class="compare_item">
                                         <div class="checkbox">
@@ -1300,7 +1302,7 @@ start Featured Cars -->
                         <div class="item">
                             <div class="featured-car-list">
                                 <div class="featured-car-img">
-                                    <a href=""><img src="images/bike/upcoming-bikes-03.jpg" class="img-responsive" alt="Image"></a>
+                                    <a href=""><img src="{% static 'front/images/bike/upcoming-bikes-03.jpg' %}" class="img-responsive" alt="Image"></a>
                                     <div class="label_icon">Used</div>
                                     <div class="compare_item">
                                         <div class="checkbox">
@@ -1334,7 +1336,7 @@ start Featured Cars -->
                         <div class="item">
                             <div class="featured-car-list">
                                 <div class="featured-car-img">
-                                    <a href=""><img src="images/bike/upcoming-bikes-02.jpg" class="img-responsive" alt="Image"></a>
+                                    <a href=""><img src="{% static 'front/images/bike/upcoming-bikes-02.jpg' %}" class="img-responsive" alt="Image"></a>
                                     <div class="label_icon">Used</div>
                                     <div class="compare_item">
                                         <div class="checkbox">
@@ -1368,7 +1370,7 @@ start Featured Cars -->
                         <div class="item">
                             <div class="featured-car-list">
                                 <div class="featured-car-img">
-                                    <a href=""><img src="images/bike/upcoming-bikes.jpg" class="img-responsive" alt="Image"></a>
+                                    <a href=""><img src="{% static 'front/images/bike/upcoming-bikes.jpg' %}" class="img-responsive" alt="Image"></a>
                                     <div class="label_icon">Used</div>
                                     <div class="compare_item">
                                         <div class="checkbox">
@@ -1402,7 +1404,7 @@ start Featured Cars -->
                         <div class="item">
                             <div class="featured-car-list">
                                 <div class="featured-car-img">
-                                    <a href=""><img src="images/bike/upcoming-bikes-02.jpg" class="img-responsive" alt="Image"></a>
+                                    <a href=""><img src="{% static 'front/images/bike/upcoming-bikes-02.jpg' %}" class="img-responsive" alt="Image"></a>
                                     <div class="label_icon">Used</div>
                                     <div class="compare_item">
                                         <div class="checkbox">
@@ -1436,7 +1438,7 @@ start Featured Cars -->
                         <div class="item">
                             <div class="featured-car-list">
                                 <div class="featured-car-img">
-                                    <a href=""><img src="images/bike/upcoming-bikes-03.jpg" class="img-responsive" alt="Image"></a>
+                                    <a href=""><img src="{% static 'front/images/bike/upcoming-bikes-03.jpg' %}" class="img-responsive" alt="Image"></a>
                                     <div class="label_icon">Used</div>
                                     <div class="compare_item">
                                         <div class="checkbox">
@@ -1486,12 +1488,12 @@ Start Banner -->
             <div class="row">
                 <div class="col-md-6">
                     <div class="wpb_single_image">
-                        <img src="images/bike/Bike-ad.jpg">
+                        <img src="{% static 'front/images/bike/Bike-ad.jpg' %}">
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="wpb_single_image">
-                        <img src="images/bike/Bike-ad-2.jpg">
+                        <img src="{% static 'front/images/bike/Bike-ad-2.jpg' %}">
                     </div>
                 </div>
             </div>
@@ -1519,7 +1521,7 @@ Start Popular car -->
                         <div class="item">
                             <div class="car-item text-center">
                                 <div class="car-image">
-                                    <img class="img-fluid" src="images/bike/Bike-image-01.png" alt="">
+                                    <img class="img-fluid" src="{% static 'front/images/bike/Bike-image-01.png' %}" alt="">
                                     <div class="car-overlay-banner">
                                         <ul>
                                             <li>
@@ -1563,7 +1565,7 @@ Start Popular car -->
                         <div class="item">
                             <div class="car-item text-center">
                                 <div class="car-image">
-                                    <img class="img-fluid" src="images/bike/Bike-image-02.png" alt="">
+                                    <img class="img-fluid" src="{% static 'front/images/bike/Bike-image-02.png' %}" alt="">
                                     <div class="car-overlay-banner">
                                         <ul>
                                             <li>
@@ -1607,7 +1609,7 @@ Start Popular car -->
                         <div class="item">
                             <div class="car-item text-center">
                                 <div class="car-image">
-                                    <img class="img-fluid" src="images/bike/Bike-image-03.png" alt="">
+                                    <img class="img-fluid" src="{% static 'front/images/bike/Bike-image-03.png' %}" alt="">
                                     <div class="car-overlay-banner">
                                         <ul>
                                             <li>
@@ -1651,7 +1653,7 @@ Start Popular car -->
                         <div class="item">
                             <div class="car-item text-center">
                                 <div class="car-image">
-                                    <img class="img-fluid" src="images/bike/Bike-image-01.png" alt="">
+                                    <img class="img-fluid" src="{% static 'front/images/bike/Bike-image-01.png' %}" alt="">
                                     <div class="car-overlay-banner">
                                         <ul>
                                             <li>
@@ -1695,7 +1697,7 @@ Start Popular car -->
                         <div class="item">
                             <div class="car-item text-center">
                                 <div class="car-image">
-                                    <img class="img-fluid" src="images/bike/Bike-image-02.png" alt="">
+                                    <img class="img-fluid" src="{% static 'front/images/bike/Bike-image-02.png' %}" alt="">
                                     <div class="car-overlay-banner">
                                         <ul>
                                             <li>
@@ -1759,92 +1761,92 @@ Start business partner -->
                             <div class="owl-stage" style="transform: translate3d(-2530px, 0px, 0px); transition: all 0.25s ease 0s; width: 4140px;">
                                 <div class="owl-item cloned" style="width: 220px; margin-right: 10px;">
                                     <div class="item">
-                                        <img class="img-fluid center-block" src="images/p1.png" alt="">
+                                        <img class="img-fluid center-block" src="{% static 'front/images/p1.png' %}" alt="">
                                     </div>
                                 </div>
                                 <div class="owl-item cloned" style="width: 220px; margin-right: 10px;">
                                     <div class="item">
-                                        <img class="img-fluid center-block" src="images/p2.png" alt="">
+                                        <img class="img-fluid center-block" src="{% static 'front/images/p2.png' %}" alt="">
                                     </div>
                                 </div>
                                 <div class="owl-item cloned" style="width: 220px; margin-right: 10px;">
                                     <div class="item">
-                                        <img class="img-fluid center-block" src="images/p3.png" alt="">
+                                        <img class="img-fluid center-block" src="{% static 'front/images/p3.png' %}" alt="">
                                     </div>
                                 </div>
                                 <div class="owl-item cloned" style="width: 220px; margin-right: 10px;">
                                     <div class="item">
-                                        <img class="img-fluid center-block" src="images/p4.png" alt="">
+                                        <img class="img-fluid center-block" src="{% static 'front/images/p4.png' %}" alt="">
                                     </div>
                                 </div>
                                 <div class="owl-item cloned" style="width: 220px; margin-right: 10px;">
                                     <div class="item">
-                                        <img class="img-fluid center-block" src="images/p5.png" alt="">
+                                        <img class="img-fluid center-block" src="{% static 'front/images/p5.png' %}" alt="">
                                     </div>
                                 </div>
                                 <div class="owl-item" style="width: 220px; margin-right: 10px;">
                                     <div class="item">
-                                        <img class="img-fluid center-block" src="images/p6.png" alt="">
+                                        <img class="img-fluid center-block" src="{% static 'front/images/p6.png' %}" alt="">
                                     </div>
                                 </div>
                                 <div class="owl-item" style="width: 220px; margin-right: 10px;">
                                     <div class="item">
-                                        <img class="img-fluid center-block" src="images/p4.png" alt="">
+                                        <img class="img-fluid center-block" src="{% static 'front/images/p4.png' %}" alt="">
                                     </div>
                                 </div>
                                 <div class="owl-item" style="width: 220px; margin-right: 10px;">
                                     <div class="item">
-                                        <img class="img-fluid center-block" src="images/p1.png" alt="">
+                                        <img class="img-fluid center-block" src="{% static 'front/images/p1.png' %}" alt="">
                                     </div>
                                 </div>
                                 <div class="owl-item" style="width: 220px; margin-right: 10px;">
                                     <div class="item">
-                                        <img class="img-fluid center-block" src="images/p2.png" alt="">
+                                        <img class="img-fluid center-block" src="{% static 'front/images/p2.png' %}" alt="">
                                     </div>
                                 </div>
                                 <div class="owl-item" style="width: 220px; margin-right: 10px;">
                                     <div class="item">
-                                        <img class="img-fluid center-block" src="images/p3.png" alt="">
+                                        <img class="img-fluid center-block" src="{% static 'front/images/p3.png' %}" alt="">
                                     </div>
                                 </div>
                                 <div class="owl-item" style="width: 220px; margin-right: 10px;">
                                     <div class="item">
-                                        <img class="img-fluid center-block" src="images/p4.png" alt="">
+                                        <img class="img-fluid center-block" src="{% static 'front/images/p4.png' %}" alt="">
                                     </div>
                                 </div>
                                 <div class="owl-item active" style="width: 220px; margin-right: 10px;">
                                     <div class="item">
-                                        <img class="img-fluid center-block" src="images/p1.png" alt="">
+                                        <img class="img-fluid center-block" src="{% static 'front/images/p1.png' %}" alt="">
                                     </div>
                                 </div>
                                 <div class="owl-item active" style="width: 220px; margin-right: 10px;">
                                     <div class="item">
-                                        <img class="img-fluid center-block" src="images/p5.png" alt="">
+                                        <img class="img-fluid center-block" src="{% static 'front/images/p5.png' %}" alt="">
                                     </div>
                                 </div>
                                 <div class="owl-item cloned active" style="width: 220px; margin-right: 10px;">
                                     <div class="item">
-                                        <img class="img-fluid center-block" src="images/p3.png" alt="">
+                                        <img class="img-fluid center-block" src="{% static 'front/images/p3.png' %}" alt="">
                                     </div>
                                 </div>
                                 <div class="owl-item cloned active" style="width: 220px; margin-right: 10px;">
                                     <div class="item">
-                                        <img class="img-fluid center-block" src="images/p2.png" alt="">
+                                        <img class="img-fluid center-block" src="{% static 'front/images/p2.png' %}" alt="">
                                     </div>
                                 </div>
                                 <div class="owl-item cloned active" style="width: 220px; margin-right: 10px;">
                                     <div class="item">
-                                        <img class="img-fluid center-block" src="images/p5.png" alt="">
+                                        <img class="img-fluid center-block" src="{% static 'front/images/p5.png' %}" alt="">
                                     </div>
                                 </div>
                                 <div class="owl-item cloned" style="width: 220px; margin-right: 10px;">
                                     <div class="item">
-                                        <img class="img-fluid center-block" src="images/p3.png" alt="">
+                                        <img class="img-fluid center-block" src="{% static 'front/images/p3.png' %}" alt="">
                                     </div>
                                 </div>
                                 <div class="owl-item cloned" style="width: 220px; margin-right: 10px;">
                                     <div class="item">
-                                        <img class="img-fluid center-block" src="images/p1.png" alt="">
+                                        <img class="img-fluid center-block" src="{% static 'front/images/p1.png' %}" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -1866,7 +1868,7 @@ End business partner -->
     <!--=================================
 footer -->
 
-    <footer class="footer bg-2 bg-overlay-black-90" style="background-image: url(images/bike/bike-title.jpg);">
+     <footer class="footer bg-2 bg-overlay-black-90" style="background-image: url({% static 'front/images/bike/bike-title.jpg' %});">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -1885,7 +1887,7 @@ footer -->
             <div class="row">
                 <div class="col-lg-4 col-md-12">
                     <div class="about-content">
-                        <img class="img-fluid" id="logo-footer" src="images/logo.png" alt="">
+                        <img class="img-fluid" id="logo-footer" src="{% static 'front/images/logo.png' %}" alt="">
                         <p>We provide everything you need to build an amazing dealership website developed especially for car sellers dealers or auto motor retailers.</p>
                     </div>
                     <div class="address">
@@ -1914,7 +1916,7 @@ footer -->
                         <h6 class="text-white">recent posts </h6>
                         <div class="recent-post">
                             <div class="recent-post-image">
-                                <img class="img-fluid" src="images/Bike-image-01.png" alt="">
+                                <img class="img-fluid" src="{% static 'front/images/bike/Bike-image-01.png' %}" alt="">
                             </div>
                             <div class="recent-post-info">
                                 <a href="#">Time to change your </a>
@@ -1923,7 +1925,7 @@ footer -->
                         </div>
                         <div class="recent-post">
                             <div class="recent-post-image">
-                                <img class="img-fluid" src="images/Bike-image-02.png" alt="">
+                                <img class="img-fluid" src="{% static 'front/images/bike/Bike-image-02.png' %}" alt="">
                             </div>
                             <div class="recent-post-info">
                                 <a href="#">The best time to </a>
@@ -1932,7 +1934,7 @@ footer -->
                         </div>
                         <div class="recent-post">
                             <div class="recent-post-image">
-                                <img class="img-fluid" src="images/Bike-image-03.png" alt="">
+                                <img class="img-fluid" src="{% static 'front/images/bike/Bike-image-03.png' %}" alt="">
                             </div>
                             <div class="recent-post-info">
                                 <a href="#">Replacing a timing </a>
@@ -1963,9 +1965,9 @@ footer -->
                     </div>
                     <div class="col-lg-6 col-md-12">
                         <ul class="list-inline text-lg-right text-center">
-                            <li><a href="Privacy-Policy.html">privacy policy </a> | </li>
-                            <li><a href="Terms%20And%20Conditions.htmlhtml">terms and conditions </a> |</li>
-                            <li><a href="contact%20us.htmlml">contact us </a></li>
+                            <li><a href="#">privacy policy </a> | </li>
+                            <li><a href="#">terms and conditions </a> |</li>
+                            <li><a href="#">contact us </a></li>
                         </ul>
                     </div>
                 </div>
@@ -1980,7 +1982,7 @@ footer -->
 back to top -->
 
     <div class="car-top bike-top">
-        <span><img src="images/bike/bike-add-top.png" alt=""></span>
+        <span><img src="{% static 'front/images/bike/bike-add-top.png' %}" alt=""></span>
     </div>
 
     <!--=================================

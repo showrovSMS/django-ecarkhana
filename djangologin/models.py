@@ -109,7 +109,7 @@ class Shipper(models.Model):
 class Orders(models.Model):
 
     order_id = models.IntegerField(null=True, blank=True)
-    customer_id = models.ForeignKey(Shipper, null=True, blank=True, on_delete=models.DO_NOTHING)
+    customer_id = models.ForeignKey(Customers, null=True, blank=True, on_delete=models.DO_NOTHING)
     employee_id = models.IntegerField(null=True, blank=True)
     order_date = models.DateTimeField(null=True, blank=True)
     required_date = models.DateTimeField(null=True, blank=True)

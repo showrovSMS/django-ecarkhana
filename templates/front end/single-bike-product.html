@@ -217,16 +217,14 @@ start header -->
             <div class="container">
                 <div id='main-menu' class='main-menu'>
                     <div class="logo">
-                        <a href="index.html"><img src="images/logo.png" alt="image" /></a>
+                        <a href="{% url 'home' %}"><img src="{% static 'front/images/logo.png' %}" alt="image" /></a>
                     </div>
                     <div class='container-menu'>
                         <nav class='navigation'>
                             <ul class='core-menu'>
-                                <li class=" sms-focus"><a href='index.html'><i class="fa fa-car"></i>Car</a></li>
-                                <li class="current sms-focus"><a href='bike-index.html'><i
-                                            class="fa fa-motorcycle"></i>Bike</a></li>
-                                <li class="sms-focus"><a href='bicycle-index.html'><i
-                                            class="fa fa-bicycle"></i>Bicycle</a></li>
+                                <li class="current sms-focus"><a href='{% url 'home' %}'><i class="fa fa-car"></i>Car</a></li>
+                                <li class="sms-focus"><a href='{% url 'bike' %}'><i class="fa fa-motorcycle"></i>Bike</a></li>
+                                <li class="sms-focus"><a href='{% url 'bicycle' %}'><i class="fa fa-bicycle"></i>Bicycle</a></li>
                                 <li class="slide"></li>
                             </ul>
 
@@ -239,26 +237,28 @@ start header -->
                                 <div class="sms-main-menu">
                                     <nav>
                                         <ul>
-                                            <li class="mobile-menu"><a href='index.html'>Car</a></li>
+                                            <li class="mobile-menu"><a href='{% url 'home' %}'>Car</a></li>
                                             <li class="mobile-menu"><a href='bike-index.html'>Bike</a> </li>
                                             <li class="mobile-menu"><a href='bicycle-index.html'>Bicycle</a>
                                             </li>
-                                            <li><a href="national-distributor-list.html">National Distributor </a>
+                                            <li><a href='{% url 'dealer-list' %}' class="current-hover">EShowroom</a>
+                                            </li>
+                                            <li><a href="{% url 'national-distributor-list' %}">National Distributor </a>
                                             </li>
                                             <li class="carkhana-drop"><a href="#">Loan Info <i
                                                         class="fa fa-angle-double-down"></i></a>
                                                 <ul class='dropdown'>
-                                                    <li><a href="car-loan.html">Apply Loan </a></li>
-                                                    <li><a href="car-loan-eligibility.html">Loan Eligibility</a></li>
-                                                    <li><a href='car-insurance.html'>Insurance</a></li>
+                                                    <li><a href="{% url 'car-loan' %}">Apply Loan </a></li>
+                                                    <li><a href="{% url 'car-loan-eligibility' %}">Loan Eligibility</a></li>
+                                                    <li><a href='{% url 'car-loan-insurance' %}'>Insurance</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="bike-listing.html">Buy Bike</a>
+                                            <li><a href="car-listing.html">Buy Cars</a>
                                             </li>
-                                            <li><a href="sell-product-list.html">Sell Bike</a> </li>
-                                            <li><a href="bike-compare.html">Comparison</a> </li>
-                                            <li><a href="auction-product-list.html">Auction</a> </li>
-                                            <li><a href="group-buying-list.html">Group Buying</a> </li>
+                                            <li><a href="{% url 'sell-list' %}">Sell Cars</a> </li>
+                                            <li><a href="{% url 'car-compare' %}">Comparison</a> </li>
+                                            <li><a href="{% url 'auction-product' %}">Auction</a> </li>
+                                            <li><a href="{% url 'group-list' %}">Group Buying</a> </li>
                                         </ul>
                                     </nav>
                                 </div>
