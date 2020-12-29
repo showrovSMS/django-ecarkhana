@@ -11,9 +11,9 @@ from djangologin.models import *
 
 #e-carkhana
 
-@admin.register(User)
+@admin.register(Userss)
 class AdminUser(admin.ModelAdmin):
-    list_display = [f.name for f in User._meta.fields]
+    list_display = [f.name for f in Userss._meta.fields]
 
 @admin.register(Guest)
 class AdminGuest(admin.ModelAdmin):

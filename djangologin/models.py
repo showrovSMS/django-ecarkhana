@@ -20,7 +20,7 @@ from django.db import models
 
 #user
 
-class User(models.Model):
+class Userss(models.Model):
 
     user_id = models.IntegerField(null=True, blank=True)
     user_name = models.TextField(null=True, blank=True)
@@ -75,7 +75,7 @@ class Guest(models.Model):
 class Roles(models.Model):
 
     roles_id = models.IntegerField(null=True, blank=True)
-    user_id =  models.ForeignKey(User, null=True, blank=True, on_delete=models.DO_NOTHING)
+    user_id =  models.ForeignKey(Userss, null=True, blank=True, on_delete=models.DO_NOTHING)
     name = models.TextField(null=True, blank=True)
     type = models.TextField(null=True, blank=True)
     permission = models.TextField(null=True, blank=True)
@@ -94,7 +94,7 @@ class Roles(models.Model):
 class Traffic(models.Model):
 
     traffic_id = models.IntegerField(null=True, blank=True)
-    user_id = models.ForeignKey(User, null=True, blank=True, on_delete=models.DO_NOTHING)
+    user_id = models.ForeignKey(Userss, null=True, blank=True, on_delete=models.DO_NOTHING)
     ip = models.IntegerField(null=True, blank=True)
     latitude = models.DecimalField(max_digits=25, decimal_places=2, null=True, blank=True)
     longitude = models.DecimalField(max_digits=25, decimal_places=2, null=True, blank=True)
@@ -147,7 +147,7 @@ class Product(models.Model):
 class Review(models.Model):
 
     review_id = models.IntegerField(null=True, blank=True)
-    user_id = models.ForeignKey(User, null=True, blank=True, on_delete=models.DO_NOTHING)
+    user_id = models.ForeignKey(Userss, null=True, blank=True, on_delete=models.DO_NOTHING)
     comments_box = models.TextField(null=True, blank=True)
     review_box = models.TextField(null=True, blank=True)
     created_at_date = models.TextField(null=True, blank=True)
@@ -224,7 +224,7 @@ class General(models.Model):
 class Cart(models.Model):
 
     cart_id = models.IntegerField(null=True, blank=True)
-    user_id = models.ForeignKey(User, null=True, blank=True, on_delete=models.DO_NOTHING)
+    user_id = models.ForeignKey(Userss, null=True, blank=True, on_delete=models.DO_NOTHING)
     created_at_date = models.TextField(null=True, blank=True)
     updated_at_date = models.TextField(null=True, blank=True)
     deleted_at_date = models.TextField(null=True, blank=True)
@@ -279,7 +279,7 @@ class Orders_status(models.Model):
 class Orders(models.Model):
 
     order_id = models.IntegerField(null=True, blank=True)
-    user_id = models.ForeignKey(User, null=True, blank=True, on_delete=models.DO_NOTHING)
+    user_id = models.ForeignKey(Userss, null=True, blank=True, on_delete=models.DO_NOTHING)
     cart_id = models.ForeignKey(Cart, null=True, blank=True, on_delete=models.DO_NOTHING)
     session_id = models.IntegerField(null=True, blank=True)
     order_status_id = models.ForeignKey(Orders_status, null=True, blank=True, on_delete=models.DO_NOTHING)
@@ -318,7 +318,7 @@ class Blog(models.Model):
     blog_id = models.IntegerField(null=True, blank=True)
     blog_name = models.TextField(null=True, blank=True)
     blog_des = models.TextField(null=True, blank=True)
-    user_id = models.ForeignKey(User, null=True, blank=True, on_delete=models.DO_NOTHING)
+    user_id = models.ForeignKey(Userss, null=True, blank=True, on_delete=models.DO_NOTHING)
     img_url = models.TextField(null=True, blank=True)
     created_at_date = models.TextField(null=True, blank=True)
     updated_at_date = models.TextField(null=True, blank=True)
@@ -353,7 +353,7 @@ class Home_slider(models.Model):
 
 class Message(models.Model):
     mess_id = models.IntegerField(null=True, blank=True)
-    user_id = models.ForeignKey(User, null=True, blank=True, on_delete=models.DO_NOTHING)
+    user_id = models.ForeignKey(Userss, null=True, blank=True, on_delete=models.DO_NOTHING)
     text_box = models.TextField(null=True, blank=True)
     time = models.DateTimeField(null=True, blank=True)
     created_at_date = models.TextField(null=True, blank=True)
