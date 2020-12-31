@@ -1,5 +1,6 @@
 from django.shortcuts import render
-
+from djangologin.models import *
+import datetime
 # Create your views here.
 def abc(request):
 
@@ -149,3 +150,67 @@ def abc36(request):
 def abc37(request):
 
     return render(request,"front end/Terms And Conditions.html",{'question_object':"",'option_objects': ""})
+
+
+
+# datainsert
+
+def datainsert(request):
+    print('this is showing')
+    Blog.objects.all().delete()
+    Userss.objects.all().delete()
+    usr = Userss()
+    usr.user_id = 1
+    usr.user_name = 'showrov'
+    usr.user_email = 'showrov.storerepublic@gmail.com'
+    usr.current_password = 'showrov.storerepublic'
+    usr.new_password = 'showrov.storerepublic'
+    usr.country = 'Bangladesh'
+    usr.image_url = 'facebook.com'
+    usr.phone = '01745227509'
+    usr.address = 'Mohammadpur'
+    usr.billing_address = 'Mohammadpur'
+    usr.shipping_address = 'Mohammadpur'
+    usr.registrated_at_date = '12 jun'
+    usr.login_at_date = datetime.datetime.now()
+    usr.created_at_date = datetime.datetime.now()
+    usr.save()
+    usr = Userss()
+    usr.user_id = 2
+    usr.user_name = 'showrov'
+    usr.user_email = 'showrov.storerepublic@gmail.com'
+    usr.current_password = 'showrov.storerepublic'
+    usr.new_password = 'showrov.storerepublic'
+    usr.country = 'Bangladesh'
+    usr.image_url = 'facebook.com'
+    usr.phone = '01745227509'
+    usr.address = 'Mohammadpur'
+    usr.billing_address = 'Mohammadpur'
+    usr.shipping_address = 'Mohammadpur'
+    usr.registrated_at_date = '12 jun'
+    usr.login_at_date = datetime.datetime.now()
+    usr.created_at_date = datetime.datetime.now()
+    usr.save()
+
+
+    obj = Blog()
+    obj.blog_id = 1
+    obj.blog_name = 'hello world'
+    obj.blog_des = 'hello worldhello worldhello worldhello worldhello worldhello world'
+    obj.user_id = Userss.objects.get(user_id=1)
+    obj.img_url = 'facebook.com'
+    obj.created_at_date = datetime.datetime.now()
+    obj.updated_at_date = datetime.datetime.now()
+    obj.save()
+
+# data update
+
+    upd = Userss.objects.get(user_id=2)
+    upd.user_name = 'nazmul'
+    upd.save()
+
+
+#data delete
+
+    upd = Userss.objects.get(user_id=2)
+    upd.delete()

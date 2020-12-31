@@ -34,8 +34,8 @@ class Userss(models.Model):
     billing_address = models.TextField(null=True, blank=True)
     shipping_address = models.TextField(null=True, blank=True)
     registrated_at_date = models.TextField(null=True, blank=True)
-    login_at_date = models.TextField(null=True, blank=True)
-    created_at_date = models.TextField(null=True, blank=True)
+    login_at_date = models.DateTimeField(null=True, blank=True)
+    created_at_date = models.DateTimeField(null=True, blank=True)
 
     class Meta:
         verbose_name_plural = "User"
@@ -320,8 +320,8 @@ class Blog(models.Model):
     blog_des = models.TextField(null=True, blank=True)
     user_id = models.ForeignKey(Userss, null=True, blank=True, on_delete=models.DO_NOTHING)
     img_url = models.TextField(null=True, blank=True)
-    created_at_date = models.TextField(null=True, blank=True)
-    updated_at_date = models.TextField(null=True, blank=True)
+    created_at_date = models.DateTimeField(null=True, blank=True)
+    updated_at_date = models.DateTimeField(null=True, blank=True)
 
     class Meta:
         verbose_name_plural = "Blog"
