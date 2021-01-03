@@ -42,4 +42,5 @@ urlpatterns = [
     path('single-sell/', abc36, name="single-sell"),
     path('terms/', abc37, name="terms"),
     path('data/', datainsert, name="data"),
+    path('query/', queryLearn, name="query"),
 ]

@@ -1,3 +1,4 @@
+from django.db.models import Q
 from django.shortcuts import render
 from djangologin.models import *
 import datetime
@@ -152,6 +153,45 @@ def abc37(request):
     return render(request,"front end/Terms And Conditions.html",{'question_object':"",'option_objects': ""})
 
 
+def queryLearn(request):
+
+    blog_list = Blog.objects.all()
+    print("hello owrld", len(blog_list))
+    for obj in blog_list:
+        print(obj.blog_name)
+
+    user_list = Userss.objects.all()
+    for kaj in user_list:
+        print(kaj.user_name,"  ", kaj.user_email)
+
+    find_user = Userss.objects.get(user_id = 4)
+    print(find_user.user_id)
+
+    find_blog = Blog.objects.get(blog_name='hello world')
+    print(find_blog.blog_id)
+
+
+    find_blog = Blog.objects.filter(blog_name='hello world')
+    for sms in find_blog:
+        print(sms.blog_id)
+
+    find_usersss = Userss.objects.filter(user_name='showrov', user_id=1)
+    for shv in find_usersss:
+        print(shv.user_name)
+
+# User.objects.filter(Q(income__gte=5000) | Q(income__isnull=True))
+
+    find_usersss = Userss.objects.filter(Q(user_name='showrov') | Q(user_id=1))
+    for shv in find_usersss:
+        print(shv.user_name)
+
+    find_blog = Blog.objects.filter(user_id__user_name='showrov')
+    for sms in find_blog:
+        print(sms.blog_name)
+
+
+    return render(request, "front end/Terms And Conditions.html", {'question_object': "", 'option_objects': ""})
+
 
 # datainsert
 
@@ -290,12 +330,12 @@ def datainsert(request):
 
 # data update
 
-    # upd = Userss.objects.get(user_id=1)
-    # upd.user_name = 'nazmul'
-    # upd.save()
+    upd = Userss.objects.get(user_id=1)
+    upd.user_name = 'nazmul'
+    upd.save()
 
 
-#data delete
-    #
-    # upd = Userss.objects.get(user_id=1)
-    # upd.delete()
+# data delete
+
+    upd = Userss.objects.get(user_id=1)
+    upd.delete()
