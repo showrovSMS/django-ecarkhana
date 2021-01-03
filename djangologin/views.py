@@ -175,16 +175,51 @@ def datainsert(request):
     usr.login_at_date = datetime.datetime.now()
     usr.created_at_date = datetime.datetime.now()
     usr.save()
+
     usr = Userss()
     usr.user_id = 2
-    usr.user_name = 'showrov'
-    usr.user_email = 'showrov.storerepublic@gmail.com'
+    usr.user_name = 'shakir'
+    usr.user_email = 'showrov@gmail.com'
     usr.current_password = 'showrov.storerepublic'
     usr.new_password = 'showrov.storerepublic'
-    usr.country = 'Bangladesh'
+    usr.country = 'India'
     usr.image_url = 'facebook.com'
-    usr.phone = '01745227509'
-    usr.address = 'Mohammadpur'
+    usr.phone = '01710607515'
+    usr.address = 'Dhanmondhi'
+    usr.billing_address = 'Mohammadpur'
+    usr.shipping_address = 'Mohammadpur'
+    usr.registrated_at_date = '12 jun'
+    usr.login_at_date = datetime.datetime.now()
+    usr.created_at_date = datetime.datetime.now()
+    usr.save()
+
+    usr = Userss()
+    usr.user_id = 3
+    usr.user_name = 'sms'
+    usr.user_email = 'showrov26692@gmail.com'
+    usr.current_password = 'showrov.storerepublic'
+    usr.new_password = 'showrov.storerepublic'
+    usr.country = 'Japan'
+    usr.image_url = 'facebook.com'
+    usr.phone = '01721762968'
+    usr.address = 'azimpur'
+    usr.billing_address = 'Mohammadpur'
+    usr.shipping_address = 'Mohammadpur'
+    usr.registrated_at_date = '12 jun'
+    usr.login_at_date = datetime.datetime.now()
+    usr.created_at_date = datetime.datetime.now()
+    usr.save()
+
+    usr = Userss()
+    usr.user_id = 4
+    usr.user_name = 'Kamrul'
+    usr.user_email = 'kamrul@gmail.com'
+    usr.current_password = 'showrov.storerepublic'
+    usr.new_password = 'showrov.storerepublic'
+    usr.country = 'Malaysia'
+    usr.image_url = 'facebook.com'
+    usr.phone = '01738200964'
+    usr.address = 'new market'
     usr.billing_address = 'Mohammadpur'
     usr.shipping_address = 'Mohammadpur'
     usr.registrated_at_date = '12 jun'
@@ -197,7 +232,57 @@ def datainsert(request):
     obj.blog_id = 1
     obj.blog_name = 'hello world'
     obj.blog_des = 'hello worldhello worldhello worldhello worldhello worldhello world'
-    obj.user_id = Userss.objects.get(user_id=1)
+    obj.user_id = Userss.objects.get(user_id=4)
+    obj.img_url = 'facebook.com'
+    obj.created_at_date = datetime.datetime.now()
+    obj.updated_at_date = datetime.datetime.now()
+    obj.save()
+
+    obj = Blog()
+    obj.blog_id = 2
+    obj.blog_name = 'hello world-2'
+    obj.blog_des = 'hello worldhello worldhello worldhello worldhello worldhello world'
+    obj.user_id = Userss.objects.get(phone = '01738200964')
+    obj.img_url = 'facebook.com'
+    obj.created_at_date = datetime.datetime.now()
+    obj.updated_at_date = datetime.datetime.now()
+    obj.save()
+
+    obj = Blog()
+    obj.blog_id = 3
+    obj.blog_name = 'hello world-3'
+    obj.blog_des = 'hello worldhello worldhello worldhello worldhello worldhello world'
+    obj.user_id = Userss.objects.get(address = 'Mohammadpur')
+    obj.img_url = 'facebook.com'
+    obj.created_at_date = datetime.datetime.now()
+    obj.updated_at_date = datetime.datetime.now()
+    obj.save()
+
+    obj = Blog()
+    obj.blog_id = 4
+    obj.blog_name = 'hello world-4'
+    obj.blog_des = 'hello worldhello worldhello worldhello worldhello worldhello world'
+    obj.user_id = Userss.objects.get(country = 'India')
+    obj.img_url = 'facebook.com'
+    obj.created_at_date = datetime.datetime.now()
+    obj.updated_at_date = datetime.datetime.now()
+    obj.save()
+
+    obj = Blog()
+    obj.blog_id = 5
+    obj.blog_name = 'hello world-5'
+    obj.blog_des = 'hello worldhello worldhello worldhello worldhello worldhello world'
+    obj.user_id = Userss.objects.get(user_email = 'showrov26692@gmail.com')
+    obj.img_url = 'facebook.com'
+    obj.created_at_date = datetime.datetime.now()
+    obj.updated_at_date = datetime.datetime.now()
+    obj.save()
+
+    obj = Blog()
+    obj.blog_id = 6
+    obj.blog_name = 'hello world-6'
+    obj.blog_des = 'hello worldhello worldhello worldhello worldhello worldhello world'
+    obj.user_id = Userss.objects.get(user_name=1)
     obj.img_url = 'facebook.com'
     obj.created_at_date = datetime.datetime.now()
     obj.updated_at_date = datetime.datetime.now()
@@ -205,12 +290,12 @@ def datainsert(request):
 
 # data update
 
-    upd = Userss.objects.get(user_id=2)
-    upd.user_name = 'nazmul'
-    upd.save()
+    # upd = Userss.objects.get(user_id=1)
+    # upd.user_name = 'nazmul'
+    # upd.save()
 
 
 #data delete
-
-    upd = Userss.objects.get(user_id=2)
-    upd.delete()
+    #
+    # upd = Userss.objects.get(user_id=1)
+    # upd.delete()
