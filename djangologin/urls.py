@@ -41,6 +41,24 @@ urlpatterns = [
     path('single-car/', abc35, name="single-car"),
     path('single-sell/', abc36, name="single-sell"),
     path('terms/', abc37, name="terms"),
+
+    # data-insert-path
     path('data/', datainsert, name="data"),
-    path('query/', queryLearn, name="query"),
+    path('blg/', bloginsert, name="blg"),
+    path('prt/', prtinsert, name="prt"),
+    path('crt/', crtinsert, name="crt"),
+    path('crtItem/', crtIteminsert, name="crtItem"),
+    path('gen/', geninsert, name="gen"),
+    path('gst/', gstinsert, name="gst"),
+    path('hms/', hmsinsert, name="hms"),
+    path('sms/', smsinsert, name="sms"),
+    path('ord/', ordinsert, name="ord"),
+    path('proc/', procinsert, name="proc"),
+    path('rep/', repinsert, name="rep"),
+    path('rev/', revadd, name="rev"),
+    path('rol/', roladd, name="rol"),
+    path('tra/', trajoin, name="tra"),
+
+
+    # path('query/', queryLearn, name="query"),
 ]
